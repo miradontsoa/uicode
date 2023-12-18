@@ -19,33 +19,8 @@ export default function CodeBrowser({
   }[];
   item: ComponentItem;
 }) {
-  // const user = useUser();
-  // const userAccountType = user?.accountType;
   const componentCode = <CodeTabs {...{ className, tabs, access: item }} />;
   return <>{componentCode}</>;
-
-  // For paid version
-
-  /* if (item.access === "premium") {
-    // Only user with premium account can have access to this
-    if (userAccountType === "premium") {
-      return <>{componentCode}</>;
-    } else {
-      return <UnlockInviteFrame/>;
-    }
-  } else if (item.access === "registered") {
-    // Only registered or premium  account can have access to this
-    if (userAccountType === "premium" || userAccountType === "registered") {
-      return <>{componentCode}</>;
-    } else {
-      return <UnlockInviteFrame/>;
-    }
-  } else {
-    // Any user can have access to this
-    return <>{componentCode}</>;
-  } */
-
-   
 }
 
  

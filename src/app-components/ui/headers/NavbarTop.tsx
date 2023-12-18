@@ -16,12 +16,9 @@ export default function NavbarTop({ menuItems }: Props) {
   const segment = useSelectedLayoutSegment();
   // const segment = "unknwon" ;
   const [isOpen, setIsOpen] = useState(false);
-  const appContext = useContext(AppContext);
-  const userAccountType = appContext?.user?.accountType;
   return (
     <div className={styles["navbar-top"]}>
       <div className={styles["navbar-logo"]}>
-        {/* <Link title="Go to home page" href="https://uicode.mirado.work"> */}
         <Link title="Go to home page" href="/">
           <Logo />
         </Link>
@@ -95,15 +92,13 @@ export default function NavbarTop({ menuItems }: Props) {
           aria-expanded="false"
           aria-label="Toggle navigation"
           className={classNames(
-            styles["menu-button"],
-            appContext.user && styles["icon-only"]
+            styles["menu-button"]
+            // appContext.user && styles["icon-only"]
           )}
-          // onClick={() => toggleMenu()}
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className={classNames(styles["text"])}>Menu</span>
           <span className={styles["icon"]}>
-            {/* <IconMenu className="icon" /> */}
             <IconMenuA className={styles["icon"]} isOpen={isOpen} />
           </span>
         </button>

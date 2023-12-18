@@ -58,7 +58,6 @@ export default async function ComponentCategoryPage({
                 title={item.title}
                 description={item.shortDesc}
                 bgClass={item.previewBgClass}
-                access={item.access}
                 tag={""}
               />
             </div>

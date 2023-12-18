@@ -1,106 +1,4 @@
-// import { User } from "firebase/auth";
-import { ObjectId } from "mongodb";
-import { DefaultSession, Session } from "next-auth";
-import React, { ComponentType } from "react";
-
-export type AccountType = "any" | "registered" | "premium" | "non-registered";
-
-export interface User {
-    name?: string;
-    // fullName?: string;
-    email?: string;
-    image?: string;
-}
-export interface AppUser extends User {
-    _id?: ObjectId | string | number;
-    accountStatus?: "new" | "regular" | "deleted",
-    accountType?: AccountType,
-    checkoutId?: string,
-    // provider?: string, // soloina authGithub...
-    authGithub?: {
-        email?: string;
-        name?: string;
-        githubId?: string; // id data from from https://api.github.com/users/username
-    },
-    authAuth0?: {
-        email?: string;
-        name?: string;
-        auth0Id?: string;
-    },
-    authGoogle?: {
-        email?: string;
-        name?: string;
-        googleId?: string;
-    },
-    authLocal?: {
-        email?: string;
-        name?: string;
-        password?: string;
-    },
-    license?: {
-        licenseKey?: string;
-        instanceId?: string;
-        productId?: number;
-        status?: "expired" | "valid";
-    },
-    customer?: {
-        customerId?: number;
-        customerEmail?: string; // LS email used while purchasing
-        customerName?: string; // LS name used while purchasing (for support)
-    },
-    subscription?: {
-        subscriptionId?: string; // LS subscription id
-        start?: string;
-        end?: string;
-    }
-}
-export interface DatabaseUser extends AppUser {
-}
-export type LicenseKey = {
-    id: number;
-    status: string;
-    key: string;
-    activation_limit: number;
-    activation_usage: number;
-    created_at: string;
-    expires_at?: string | null;
-};
-export interface ActivateLicenseMeta {
-    store_id?: number;
-    order_id?: number;
-    order_item_id?: number;
-    product_id?: number;
-    product_name?: string;
-    variant_id?: number;
-    variant_name?: string;
-    customer_id?: number;
-    customer_name?: string;
-    customer_email?: string;
-};
-export interface ActivateInstance {
-    id: string;
-    name: string;
-    created_at: string;
-}
-export interface ActivateLicenseResponse {
-    activated: boolean,
-    license_key: LicenseKey,
-    meta?: ActivateLicenseMeta,
-    instance?: ActivateInstance
-}
-
-export interface ValidateLicenseResponse {
-    valid: boolean,
-    license_key: LicenseKey,
-    meta?: ActivateLicenseMeta,
-    instance?: ActivateInstance
-}
-
-
-
-export interface AppSession extends Session {
-    provider?: string,
-}
+import React from "react";
 
 // Usefull type or interfaces
 export type MenuItem = {
@@ -114,7 +12,6 @@ export type MenuItem = {
     type?: 'local' | 'page' | 'extern',
     appearance?: 'cta' | 'link' | 'separator',
     active?: boolean,
-    visibleForAccount?: AccountType,
     visibleForDevice?: "mobile-only" | "desktop-only",
     mobileHalf?: boolean,
     mobileColor?: string,

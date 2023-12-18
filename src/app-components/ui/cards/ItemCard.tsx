@@ -1,13 +1,10 @@
 // "use client";
 
-import { AccountType } from "@/types";
 import classNames from "classnames";
+import clsx from "clsx";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import TagApp from "../tag/TagApp";
-import CardTag from "./CardTag";
 import styles from "./ItemCard.module.css";
-import clsx from "clsx";
 
 type Props = {
   imageUrl?: string | StaticImageData;
@@ -17,7 +14,6 @@ type Props = {
   title?: string;
   description?: string;
   bgClass?: string;
-  access?: AccountType;
   tag?: string;
 };
 export default function ItemCard({
@@ -27,7 +23,6 @@ export default function ItemCard({
   url = "",
   title,
   bgClass,
-  access,
   tag,
 }: Props) {
   return (

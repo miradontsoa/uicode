@@ -1,6 +1,5 @@
 // "use client";
 
-import { AccountType } from "@/types";
 import classNames from "classnames";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
