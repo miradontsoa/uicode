@@ -6,6 +6,8 @@ import classNames from "classnames";
 import ButtonApp from "../buttons/ButtonApp";
 import styles from "./DesignFileFrame.module.css";
 import { ASSETS } from "@/const";
+import IconGithub from "../icons/IconGithub";
+import { DESIGN } from "@/const/design";
 
 export default function DesignFileFrame({
   className,
@@ -24,14 +26,7 @@ export default function DesignFileFrame({
       </div>
       {/*<h6 className="mb-4 mt-4">SVG design elements:</h6>
        <div className="flex gap-2">
-        <div>
-          <a href={`${DESIGN.SVG_GITHUB}`} rel="noreferrer" target={"_blank"}>
-            <ButtonApp type="link" variant="outline">
-              <IconGithub className="w-6" />
-              <span className="ml-2">SVG Design</span>
-            </ButtonApp>
-          </a>
-        </div>
+        <GithubDownloadButton />
       </div> */}
       <div className="flex gap-2"></div>
       {children}
@@ -54,6 +49,19 @@ function FigmaDownloadButton({ item }: { item?: ComponentItem }) {
           </ButtonApp>
         </a>
       </div>
+    </div>
+  );
+}
+
+function GithubDownloadButton() {
+  return (
+    <div>
+      <a href={`${DESIGN.SVG_GITHUB}`} rel="noreferrer" target={"_blank"}>
+        <ButtonApp type="link" variant="outline">
+          <IconGithub className="w-6" />
+          <span className="ml-2">SVG Design</span>
+        </ButtonApp>
+      </a>
     </div>
   );
 }
