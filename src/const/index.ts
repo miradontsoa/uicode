@@ -8,7 +8,7 @@ export const SOCIALS = {
     INSTAGRAM: 'https://instagram.com/mirado_uicode',
     LINKEDIN: 'http://linkedin.com/in/miradontsoa',
     GITHUB_MIRADO: 'http://github.com/miradontsoa',
-    GITHUB: 'http://github.com/miradontsoa/uicode_web',
+    GITHUB: 'http://github.com/miradontsoa/uicode',
     EMAIL_SUPPORT: 'support@highhay.com',
 }
 
