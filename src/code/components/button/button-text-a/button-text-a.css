@@ -1,0 +1,47 @@
+/* The text button */
+.button-text-a {
+  --fg-color: #303030;
+  --font-size: 1rem;
+  --border-color: #303030;
+  --border-size: 2px;
+  --border-offset: 2px;
+  --border-border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 0em;
+  font-size: var(--font-size);
+  color: var(--fg-color);
+  transition: 0.2s;
+  position: relative;
+}
+
+.button-text-a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: top right;
+  border-radius: var(--border-border-radius);
+  bottom: calc(-1 * var(--border-offset));
+  height: var(--border-size);
+  background-color: var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.button-text-a:hover::after {
+  transform: scaleX(1);
+  transform-origin: top left;
+}
+
+/* The button group */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

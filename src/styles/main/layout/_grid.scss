@@ -1,0 +1,47 @@
+.grid-3 {
+  display: grid;
+  gap: 3rem;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-md) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-2 {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid-product {
+  margin-top: 2rem;
+}
+
+.list-check {}
+
+.list-check-item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  .check-icon {
+    width: 1.25rem;
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+  }
+
+  // @media (min-width: 1024px) {
+  //   // lg:text-lg 
+  //   font-size: 1.125rem;
+  //   line-height: 1.75rem;
+  // }
+}

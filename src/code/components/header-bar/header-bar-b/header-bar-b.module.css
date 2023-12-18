@@ -1,0 +1,247 @@
+.wrapper {
+    --fg-color: #303030;
+    --max-width: 1024px;
+    --padding-y: 3rem;
+    --navbar-1-bg-color: #FFFFFF;
+    --navbar-1-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: var(--padding-y);
+    padding-right: var(--padding-y);
+    position: relative;
+}
+
+/* .navbar .navbar-content { */
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    max-width: var(--max-width);
+}
+
+/* First Navigation Bar */
+.navbar-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    min-height: var(--navbar-1-height);
+    background-color: var(--navbar-1-bg-color); 
+}
+
+.navbar-1 .logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-1 .logo .logo-img {
+    height: 2rem;
+    width: auto;
+}
+
+
+/* Navbar content for navbar-1 and navbar-2 */
+.nav-start {
+    display: flex;
+    flex-basis: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.nav-middle {
+    display: flex;
+    flex-basis: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-end {
+    display: flex;
+    flex-basis: auto;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.item-link {}
+
+.item-btn {
+    border: none;
+    color: currentColor;
+    background-color: transparent;
+    position: relative;
+}
+
+/* nav-list-1 type list */
+.nav-list-1 {
+    gap: 1.5rem;
+    font-size: 1rem;
+}
+
+.nav-list-1 .item-link,
+.nav-list-1 .item-btn {
+    padding: 0.75rem 0;
+    display: block;
+    line-height: 1.2;
+    color: var(--fg-color);
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-list-1 .item-link::before,
+.nav-list-1 .item-btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid currentColor;
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: 0.3s;
+}
+
+.nav-list-1 .item-link:hover,
+.nav-list-1 .item-btn:hover,
+.nav-list-1 .item-btn:focus,
+.nav-list-1 .item-active {
+    opacity: 0.5;
+    outline: none;
+}
+
+.nav-list-1 .item-link:hover::before,
+.nav-list-1 .item-btn:hover::before,
+.nav-list-1 .item-active::before {
+    opacity: 1;
+    transform: none;
+}
+
+.subnav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+
+/* nav-list-actions type list */
+.nav-list-actions {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-actions .item-btn {
+    padding: 0 0.25rem;
+    min-width: 2rem;
+    height: 2rem;
+    color: currentColor;
+    background-color: transparent;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.nav-list-actions .item-btn:focus {
+    outline: none;
+}
+
+.item-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.item-badge {
+    position: absolute;
+    top: -0.125rem;
+    right: -0.125rem;
+    background-color: #df2453;
+    color: white;
+    font-size: 0.625rem;
+    padding: 0.3755em 0.5em;
+    line-height: 0.75;
+    border-radius: 5rem;
+}
+
+.nav-list-actions .item-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* SearchField form You may use SearchFieldA or SearchFieldLightA code content for it*/
+.search-field-wrapper {
+    width: 12rem;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.search-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem;
+    width: 100%;
+    flex: 1;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5rem;
+}
+
+.search-btn-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+ 

@@ -1,0 +1,229 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #383838;
+    --bg-color: white;
+    --gap: 0.75rem;;
+    --border-radius: 1rem;
+    --image-border-radius: 0.5rem;
+    --padding: 0.75rem;
+    --footer-padding-y: 0.5rem;
+    --image-size: 7rem;
+    --action-icon-color: #ffffff;
+    --action-icon-size: 1.5rem;
+    --detail-button-color: #383838;
+    --detail-button-size: 1.25rem;
+    --details-gap: 0.5rem;
+    --characteristics-color: #383838;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: var(--gap);
+    padding: var(--padding);
+}
+
+/* Image wrapper */
+.image-wrapper {
+    flex-grow: 0;
+    overflow: hidden;
+    position: relative;
+    width: var(--image-size);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--image-border-radius) ;
+}
+
+.image-text {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 0.125rem 0.5rem;
+}
+
+.image-text p {
+    font-size: 0.75rem;
+    margin-top: 0;
+}
+
+/* Body */
+.body {
+    flex: 1 auto;
+    color: var(--fg-color);
+}
+
+.body>a,
+.body .body-link {
+    color: currentColor;
+}
+
+.body>a:hover,
+.body .body-link:hover {
+    text-decoration: none;
+}
+
+/* body content layout */
+.body-content {
+    margin-top: 0rem;
+}
+
+/* Footer */
+.footer {
+    padding-top: var(--footer-padding-y);
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 0.5rem;
+}
+
+.f-left {
+    flex: 1 auto;
+}
+
+.f-right {
+    flex-grow: 0;
+}
+
+
+/* Title text */
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.price {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.desc p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+.characteristics {
+    margin-top: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    line-height: 1.5;
+    color: var(--characteristics-color);
+}
+
+/* rating */
+.r-comment {
+    margin-left: 0.5rem;
+}
+
+/* Footer details */
+.f-details {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--details-gap);
+}
+
+
+/* Characteristics Item */
+.charac-item {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 600;
+}
+
+.c-icon {
+    display: inline-flex;
+    font-size: 1.125em;
+    min-width: 1em;
+    height: 1em;
+    display: flex;
+}
+
+.c-text {
+    display: inline-flex;
+}
+
+
+/* action Button */
+.action-button {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.125rem 0;
+    line-height: 1.25;
+    font-weight: 400;
+    min-height: var(--detail-button-size);
+    color: var(--detail-button-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    gap: 0.25rem
+}
+
+.action-button .icon {
+    min-width: var(--detail-button-size);
+    min-height: var(--detail-button-size);
+    font-size: var(--detail-button-size);
+    display: flex;
+}
+
+.action-button .text {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.action-button:hover,
+.action-button:active,
+.action-button:focus {
+    border: none;
+    outline: none;
+    opacity: 0.7;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+
+/* Customized color */
+.variant-simple {
+    --bg-color: transparent;
+    --padding: 0px;
+    --gap: 1rem;
+    --image-border-radius: 1rem;
+    --action-button-size: 1.25rem;
+    --footer-padding-y: 0.5rem;
+    --footer-padding-x: 0rem;
+    box-shadow: none;
+}

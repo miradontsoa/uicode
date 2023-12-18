@@ -1,0 +1,81 @@
+.wrapper {
+    --border-width: 1px;
+    --bg-color: transparent;
+    --fg-color: #313131;
+    --active-fg-color: #FFFFFF;
+    --active-bg-color: #0077FF;
+    --border-radius: 16px;
+    --item-size: 1rem;
+    --padding-x: 0.75em;
+    --padding-y: 0.5em;
+    display: flex;
+    gap: calc(var(--item-size) / 2);
+}
+
+.category-item {
+    all: unset;
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+    border-radius: var(--border-radius);
+    min-height: var(--item-size);
+    text-align: center;
+    min-width:calc(1.5 * var(--item-size));
+    font-size: var(--item-size);
+    padding: var(--padding-y) var(--padding-x);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 0px var(--border-width) var(--fg-color);
+    line-height: 1.2;
+}
+.category-item.active,
+.category-item:active,
+.category-item:hover{
+    outline: none;
+    --fg-color: var(--active-fg-color);
+    --bg-color: var(--active-bg-color);
+    box-shadow: 0px 0px 0px var(--border-width) var(--bg-color);
+}
+
+/* Icon border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.375rem;
+}
+
+.r-large {
+    --border-radius: 0.5rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+
+/* Size */
+.s-small {
+    --item-size: 0.875rem;
+    --padding-x: 0.5em;
+    --padding-y: 0.25em;
+}
+
+.s-medium {
+    --item-size: 1rem;
+}
+
+.s-large {
+    --item-size: 1.25rem;
+}
+
+/* sample customization */
+.variant-black { 
+    --active-bg-color: #1d1d1d;
+}

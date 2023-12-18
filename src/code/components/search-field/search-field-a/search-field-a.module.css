@@ -1,0 +1,74 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #383838;
+    --primary-color: #278CF2;
+    width: 100%;
+    color: var(--fg-color);
+}
+
+/* input */
+.input-search {
+    --border-color: #cccccc;
+    --bg-color: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* search button */
+.search-btn {
+    --search-button-color: var(--fg-color);
+    --search-button-height: 2.5rem;
+    --search-button-width: 2.5rem;
+    background-color: transparent;
+    color: var(--search-button-color);
+    border: none;
+    min-height: var(--search-button-height);
+    min-width: var(--search-button-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.search-btn.icon-only {
+    height: var(--search-button-height);
+    width: var(--search-button-width);
+}
+
+.btn-icon {
+    display: inline-flex;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* Border radius adjustment */
+.r-small .search-btn {
+    border-radius: 0.25rem;
+}
+
+.r-medium .search-btn {
+    border-radius: 0.25rem;
+}
+
+.r-large .search-btn {
+    border-radius: 0.75rem;
+}
+
+.r-full .search-btn {
+    border-radius: 2.5rem;
+}
+
+.r-full .input-search {
+    padding-left: 0.5rem;
+}
+
+/* Customized color */
+.variant-style-a .search-btn {
+    background-color: #383838;
+    color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.variant-style-a .search-btn.icon-only {
+    padding: 0;
+}

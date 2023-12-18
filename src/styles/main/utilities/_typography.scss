@@ -1,0 +1,226 @@
+// text color
+.text-current-color {
+  color: currentColor;
+}
+
+// text color variation
+@each $color in $theme-colors {
+  .text-#{"" + $color} {
+    color: var(--#{$color}) !important;
+  }
+}
+
+@each $color in $colors {
+  .text-#{"" + $color} {
+    color: var(--#{$color}) !important;
+  }
+}
+
+.text-muted,
+.text-muted-a {
+  opacity: 0.7;
+}
+
+.text-muted-b {
+  opacity: 0.8;
+}
+
+// Fonts size
+// .text-size-sm{
+//   font-size: var(--text-sm);
+// }
+// .text-size-md{
+//   font-size: var(--text-md);
+// }
+// .text-size-lg{
+//   font-size: var(--text-lg);
+// }
+// .text-size-xl{
+//   font-size: var(--text-xl);
+// }
+// .text-size-xxl{
+//   font-size: var(--text-xxl);
+// }
+
+.text-sm {
+  font-size: var(--text-sm);
+}
+
+.text-md {
+  font-size: var(--text-md);
+}
+
+.text-regular {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+}
+
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+
+
+.strong {
+  font-weight: bold !important;
+}
+
+.text-line-through {
+  text-decoration: line-through;
+}
+
+// letter spacing
+.text-spaced {
+  letter-spacing: 0.2em;
+}
+
+// font weight
+.fw-thin {
+  font-weight: 100;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 100;
+}
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+// Text align
+.text-end {
+  text-align: right;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-md-end {
+  @media screen and (min-width: $breakpoint-md) {
+    text-align: right;
+  }
+}
+
+.text-md-start {
+  @media screen and (min-width: $breakpoint-md) {
+    text-align: left;
+  }
+}
+
+.text-lg-end {
+  @media screen and (min-width: $breakpoint-lg) {
+    text-align: right;
+  }
+}
+
+.text-lg-start {
+  @media screen and (min-width: $breakpoint-lg) {
+    text-align: left;
+  }
+}
+.font-size-inherit{
+  font-size: inherit;
+}
+// Paragraph
+.p-wrap {
+  white-space: pre-line;
+}
+
+// Title and display
+
+.display-1,
+.display-2,
+.display-3 {
+  font-weight: 400;
+  // line-height: 1.35;
+}
+
+.display-subtitle {
+  font-size: 1.25rem;
+}
+
+.display-text {
+  font-size: 1.125rem;
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.title-1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: $breakpoint-lg) {
+    // font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+}
+
+.title-2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 2rem;
+  }
+}
+
+.title-page-1 {
+  font-size: 2rem;
+  font-weight: 600;
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 2.5rem;
+  }
+}
+
+.title-3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle-1 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 1.25rem;
+  }
+}
+

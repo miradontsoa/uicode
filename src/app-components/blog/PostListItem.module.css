@@ -1,0 +1,56 @@
+.figure {
+    display: flex;
+    gap: 0rem; 
+    flex-direction: column;
+}
+@media screen  and (min-width: 768px){
+    .figure {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: 280px 1fr;
+        grid-template-areas: "image legend";
+    }
+}
+
+.imageWrapper{
+    grid-area: image;
+}
+.legendWrapper{
+    grid-column-start: image ;
+    grid-column-end: legend ;
+    /* grid-area: image / legend; */
+}
+.imageWrapper ~ .legendWrapper{
+    grid-area: legend;
+}
+
+.figure .image{
+    border-radius: 1rem;
+}
+.textLink{
+    text-decoration: none;
+}
+.title{
+    margin-bottom: 1rem;
+}
+
+.categories{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+.category{
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    /* margin-right: 0.5rem; */
+    border-radius: 0.5rem;
+    background-color: rgba(var(--fg-color-rgb), 0.1);
+    color: rgba(var(--fg-color-rgb), 0.5);
+}
+/* .category:after{
+    content: ', ';
+}
+.category:last-child:after{
+    content: '';
+} */

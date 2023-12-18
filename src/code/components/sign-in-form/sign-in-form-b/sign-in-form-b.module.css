@@ -1,0 +1,133 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #383838;
+    --bg-color: #E1E5F0;
+    --primary-color: #567FEF;
+    --border-radius: 1rem;
+    --padding: 1.5rem;
+    --detail-button-color: #383838;
+    --detail-button-size: 1.25rem;
+    width: 100%;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Title text */
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.desc {
+    margin: 0rem 1rem;
+}
+
+.desc p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.note {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-container {
+    --border-color: var(--primary-color);
+}
+
+.input-email {
+    margin-top: 1rem;
+}
+
+.input-icon {
+    width: 1.5rem;
+    color: var(--primary-color);
+}
+
+.input-group .submit-btn {
+    width: 100%;
+    --bg-color: var(--primary-color);
+    --shadow-color: var(--primary-color);
+}
+
+/* Login issue */
+.login-issue {
+    margin-top: 0.5rem;
+    text-align: right;
+}
+
+.login-issue a {
+    color: var(--primary-color);
+}
+
+/* Sign in provider */
+.sign-in-provider {
+
+    margin-top: 0.5rem;
+}
+
+.sp-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.sp-btn {
+    width: 100%;
+    width: 100%;
+    --bg-color: #ffffff;
+    --fg-color: #1d1d1d;
+    --shadow-color: var(--primary-color);
+}
+
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+
+/* Customized color */
+.variant-simple {
+    --bg-color: transparent;
+    --padding: 0px;
+    box-shadow: none;
+}
+
+.variant-simple .title {
+    margin-top: 0rem;
+}
+
+.variant-simple .desc {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}

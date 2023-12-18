@@ -1,0 +1,39 @@
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:1024px) {
+    .breadcrumb {
+        font-size: 0.875rem;
+    }
+}
+
+.br-item {
+    position: relative;
+    color: var(--primary);
+}
+
+.br-item::after {
+    content: "/";
+    position: relative;
+    color: var(--fg-color);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.br-item:last-child::after {
+    display: none;
+}
+
+.br-link {
+    text-decoration: none;
+}
+
+.br-link:hover {
+    text-decoration: none;
+}
+
+.br-item:last-child .br-link {
+    font-weight: 500;
+    color: var(--fg-color);
+}

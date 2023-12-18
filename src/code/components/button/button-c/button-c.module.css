@@ -1,0 +1,148 @@
+.button {
+    --fg-color: #567FEF;
+    --bg-color: rgba(37, 102, 255, 0);
+    --bg-hover-color: rgba(37, 102, 255, 0.1);
+    --shadow-color: rgba(47, 47, 47, 0.5);
+    --shadow-offset: 4px;
+    --height: 2.5rem;
+    --border-size: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.25em 1em;
+    min-height: var(--height);
+    min-width: var(--height);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border: var(--border-size) solid var(--fg-color);
+    transition: 0.2s;
+}
+
+.button:hover {
+    --shadow-offset: 1px;
+    --shadow-color: var(--fg-color);
+    background-color: var(--bg-hover-color);
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 8px -4px var(--shadow-color);
+}
+
+.sh-medium.active,
+.sh-medium:active,
+.sh-medium:focus,
+.sh-medium:hover {
+    box-shadow: 0px 0px 1px var(--shadow-color);
+}
+
+/* Icon only */
+.button.icon-only {
+    padding: 0rem;
+}
+
+/* Height */
+.h-medium {
+    --height: 2.5rem;
+}
+
+.h-large {
+    --height: 3rem;
+}
+
+
+/* Size */
+.s-x-small {
+    font-size: 0.75rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+.s-small {
+    font-size: 0.875rem;
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+.s-large {
+    font-size: 1.25rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+/* Width */
+.w-full {
+    width: 100%;
+}
+
+/* Border size */
+.bd-thin {
+    --border-size: 1px;
+}
+
+.bd-medium {
+    --border-size: 2px;
+}
+
+.bd-thick {
+    --border-size: 4px;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.25rem;
+}
+
+.r-medium {
+    border-radius: 0.5rem;
+}
+
+.r-large {
+    border-radius: 1rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* sample customization */
+.variant-light-blue {
+    --bg-color: rgb(252, 252, 252);
+    --bg-hover-color: rgba(252, 252, 252, 0.8);
+    --fg-color: #567FEF;
+    --shadow-color: rgba(86, 127, 239, 0.5);
+}
+
+
+.variant-black {
+    --bg-color: rgba(0, 0, 0, 0.0);
+    --bg-hover-color: rgba(0, 0, 0, 0.1);
+    --fg-color: rgb(48, 48, 48);
+    --shadow-color: rgba(48, 48, 48, 0.5);
+}
+
+.variant-dark-blue {
+    --bg-color: #567FEF;
+    --bg-hover-color: rgba(86, 127, 239, 0.7);
+    --fg-color: #ffffff;
+    --shadow-color: rgba(86, 127, 239, 0.5);
+}
+
+.variant-red {
+    --bg-color: rgba(240, 13, 62, 0.1);
+    --bg-hover-color: rgba(240, 13, 62, 0.2);
+    --fg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(252, 57, 99);
+}

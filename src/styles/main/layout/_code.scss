@@ -1,0 +1,134 @@
+.prismjs {
+    --cd-brown: #df8c4e;
+    --cd-yellow: #eec167;
+    --cd-purple: #be53de;
+    --cd-red: #fa4e6c;
+    --cd-green: #5cc579;
+    --cd-blue: #35adf1;
+    --cd-aqua: #17aec4;
+    --cd-gray: #70838e;
+    padding-left: 1rem;
+}
+
+.language-tsx {
+    text-shadow: none !important;
+
+    * {
+        color: var(--fg-color);
+    }
+
+    .script {
+        color: var(--cd-yellow)
+    }
+
+    .module,
+    .keyword {
+        color: var(--cd-purple)
+    }
+
+    .tag,
+    .imports,
+    .maybe-class-name {
+        color: var(--cd-red)
+    }
+
+    .imports.punctuation,
+    .tag.punctuation {
+        color: var(--fg-color);
+    }
+
+    .tag.attr-value,
+    .string {
+        color: var(--cd-green);
+    }
+
+    .tag.attr-value.attr-equals {
+        color: var(--fg-color);
+    }
+
+    .tag.class-name {
+        color: var(--cd-yellow);
+    }
+
+    .builtin {
+        color: var(--cd-yellow);
+    }
+
+    .template-string {
+        color: var(--cd-green);
+    }
+
+    .template-string.interpolation {
+        color: var(--cd-red);
+    }
+
+    .template-string.interpolation.punctuation {
+        color: var(--fg-color);
+    }
+
+    .method,
+    .property-access,
+    .function {
+        color: var(--cd-blue)
+    }
+
+    .operator {
+        color: var(--cd-aqua)
+    }
+
+    .punctuation {}
+
+    .comment {
+        color: var(--cd-gray)
+    }
+
+    .attr-name {
+        color: var(--cd-brown);
+    }
+}
+
+// CSS
+.language-css {
+    text-shadow: none !important;
+
+    * {
+        color: var(--cd-brown)
+    }
+
+    .selector.class {
+        color: var(--cd-brown);
+    }
+
+    .selector.pseudo-class {
+        color: var(--cd-aqua);
+    }
+
+    .variable {
+        color: var(--cd-red);
+    }
+
+    .property {
+        color: var(--fg-color);
+        // color: var(--cd-blue);
+    }
+
+    .punctuation {
+        color: var(--fg-color);
+    }
+
+    .combinator {
+        color: var(--fg-color);
+    }
+
+    .function {
+        color: var(--cd-aqua);
+    }
+
+    .unit {
+        color: var(--cd-red);
+    }
+
+    .comment {
+        color: var(--cd-gray);
+    }
+}

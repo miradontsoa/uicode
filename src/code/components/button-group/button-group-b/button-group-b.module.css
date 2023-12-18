@@ -1,0 +1,208 @@
+.group {
+    --height: 2.5rem;
+    --font-size: 1rem;
+    --gap: 0.5rem;
+    --border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    width: -moz-fit-content;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button {
+    --btn-fg-color: currentColor;
+    --btn-bg-color: transparent;
+    --btn-hover-fg-color: currentColor;
+    --btn-hover-bg-color: #cecece;
+    --btn-padding-y: 0.25rem;
+    --btn-padding-x: 0.25rem;
+    --btn-icon-size: 1.25rem;
+    --btn-gap: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: var(--font-size);
+    color: var(--btn-fg-color);
+    background-color: var(--btn-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--btn-gap);
+    padding: 0.25em 1em;
+    min-height: var(--height);
+    min-width: var(--height);
+    padding: var(--btn-padding-x) var(--btn-padding-x);
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon>* {
+    font-size: var(--btn-icon-size);
+    width: var(--btn-icon-size);
+    height: auto;
+}
+
+/* Icon position */
+.icon-after-text .text {
+    order: 1;
+}
+
+.icon-after-text .icon {
+    order: 2;
+}
+
+/* Icon only */
+.button.icon-only {
+    padding: 0rem;
+}
+
+.button.active,
+.button:active,
+.button:focus,
+.button:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.button.active,
+.button:not(.static):active,
+.button:not(.static):hover {
+    text-decoration: none;
+    color: var(--btn-hover-fg-color);
+    background-color: var(--btn-hover-bg-color);
+}
+
+.button:first-child {}
+
+.button:last-child {
+    border-right: none;
+}
+
+/* Size */
+.s-x-small {
+    --font-size: 0.75rem;
+    --height: 1.5rem;
+    --gap: 0.25rem;
+}
+
+.s-x-small .button {
+    --btn-icon-size: 1rem;
+}
+
+.s-small {
+    --font-size: 0.875rem;
+    --height: 2rem;
+}
+
+.s-large {
+    --font-size: 1.25rem;
+    --height: 3rem;
+}
+
+.s-large .button {
+    --btn-icon-size: 1.5rem;
+    --btn-padding-x: 0.5rem;
+}
+
+/* Width */
+.w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-full .button {
+    flex-grow: 1;
+}
+
+/* Separator color will be the same as button with border */
+.with-border .button {
+    --btn-separator-color: var(--border-color);
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.5rem;
+}
+
+.r-large {
+    --border-radius: 1rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Gap */
+.g-none {
+    --gap: 0rem;
+}
+
+.g-small {
+    --gap: 0.25rem;
+}
+
+.g-medium {
+    --gap: 0.5rem;
+}
+
+/* Sample customization */
+/* Button color */
+.btn-color-blue {
+    --btn-fg-color: #567FEF;
+    --btn-bg-color: transparent;
+    --btn-hover-fg-color: #567FEF;
+    --btn-hover-bg-color: rgba(86, 127, 239, 0.17);
+}
+
+.btn-color-light {
+    --btn-fg-color: #303030;
+    --btn-bg-color: transparent;
+    --btn-hover-fg-color: #303030;
+    --btn-hover-bg-color: rgba(128, 128, 128, 0.17);
+    --btn-padding-x: 0.5rem;
+}
+
+.btn-color-light-opaque {
+    --btn-fg-color: #303030;
+    --btn-bg-color: #ffffff;
+    --btn-hover-fg-color: #303030;
+    --btn-hover-bg-color: #cecece;
+    --btn-padding-x: 0.5rem;
+}
+
+.btn-color-dark {
+    --btn-fg-color: #FFFFFF;
+    --btn-bg-color: transparent;
+    --btn-hover-fg-color: #FFFFFF;
+    --btn-hover-bg-color: rgba(128, 128, 128, 0.17);
+    --btn-padding-x: 0.5rem;
+}
+
+.btn-color-dark-opaque {
+    --btn-fg-color: #FFFFFF;
+    --btn-bg-color: #303030;
+    --btn-hover-fg-color: #FFFFFF;
+    --btn-hover-bg-color: #4d4d4d;
+    --btn-padding-x: 0.5rem;
+}

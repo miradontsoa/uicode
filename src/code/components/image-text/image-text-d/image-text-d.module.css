@@ -1,0 +1,126 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #ffffff;
+    --border-radius: 1rem;
+    --translate-x: 3rem;
+    --padding-y: 2.5rem;
+    width: 100%;
+    position: relative;
+}
+
+/* Image wrapper */
+.image-wrapper {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    padding-left: var(--translate-x, 0);
+    padding-right: var(--translate-x, 0);
+}
+
+.image {
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+}
+
+/* text content layout */
+.text-content {
+    bottom: var(--padding-y, 0);
+    left: 0;
+    right: 0;
+    top: var(--padding-y, 0);
+    position: absolute;
+    z-index: 2;
+    color: var(--fg-color);
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.text-wrapper {
+    width: 100%;
+    text-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+}
+
+.text-wrapper p {
+    line-height: 1.5;
+}
+
+.text-wrapper>*:last-child {
+    margin-bottom: 0;
+}
+
+.text-wrapper>* {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom: 0;
+    writing-mode: vertical-lr;
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+/* Text element margin needs to be set here */
+.text-wrapper h2,
+.text-wrapper h3,
+.text-wrapper h4,
+.text-wrapper h5 {
+    margin-block-end: 0.5rem;
+}
+
+/* Alignment */
+/* Vertical alignment */
+.tv-start .text-content {
+    align-items: flex-start;
+}
+
+.tv-center .text-content {
+    align-items: center;
+}
+
+.tv-end .text-content {
+    align-items: flex-end;
+}
+
+/* Horizontal alignment */
+.th-start .text-content {
+    text-align: left;
+}
+
+.th-end .text-content {
+    text-align: right;
+}
+
+.th-center .text-content {
+    text-align: center;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+/* Customized color */
+.variant-dark {
+    --fg-color: #411f04;
+}
+
+.variant-dark .text-wrapper {
+    width: 100%;
+    text-shadow: 0px 0.25rem 0.5rem rgba(255, 255, 255, 0.2);
+}

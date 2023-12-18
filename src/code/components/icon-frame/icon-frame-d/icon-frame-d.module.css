@@ -1,0 +1,172 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #303030;
+    --bg-color: #ffffff;
+    --color-gradient: linear-gradient(to bottom right, #ffd92f, #ff2f52);
+    --bg-gradient-stop-1: #e7e7e7;
+    --bg-gradient-stop-2: #d3d3d3;
+    --size: 4rem;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-radius: 0.5rem;
+    --border-size: 3px;
+    --border-color: #303030;
+    --border-gap: 5px;
+    --border-padding-color: #ffffff;
+    font-size: 1.5rem;
+    min-width: var(--size);
+    min-height: var(--size);
+    padding: var(--border-gap);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--fg-color);
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid transparent;
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: 0.2s;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    /* border-radius: calc(var(--border-radius) * ((var(--border-size) + var(--border-gap)) / var(--border-radius))); */
+    border-radius: calc(var(--border-radius) - ((var(--border-size) + var(--border-gap))));
+            background: var(--bg-color);
+    }
+
+    .wrapper::before {
+        --aureole-gap: 4px;
+        content: "";
+        position: absolute;
+        top: calc(-1 * var(--border-size));
+        bottom: calc(-1 * var(--border-size));
+        left: calc(-1 * var(--border-size));
+        right: calc(-1 * var(--border-size));
+        border-radius: inherit;
+
+        /* Outer border using css mask */
+        padding: var(--border-size);
+        background: var(--border-color);
+        mask: linear-gradient(#ffffff, #ffffff) content-box,
+        linear-gradient(#000000, #000000);
+        mask-composite: exclude;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+
+    /* Size */
+    .s-small {
+        --size: 3rem;
+    }
+
+    .s-medium {
+        --size: 4rem;
+    }
+
+    .s-large {
+        --size: 5rem;
+    }
+
+    /* Border Size */
+    .bs-none {
+        --border-size: 0px;
+    }
+
+    .bs-small {
+        --border-size: 2px;
+    }
+
+    .bs-medium {
+        --border-size: 3px;
+    }
+
+    .bs-large {
+        --border-size: 6px;
+    }
+
+    /* Border radius */
+    .r-none {
+        --border-radius: 0;
+    }
+
+    .r-small {
+        --border-radius: 0.5rem;
+    }
+
+    .r-medium {
+        --border-radius: 1rem;
+    }
+
+    .r-large {
+        --border-radius: 1.5rem;
+    }
+
+    .r-full {
+        --border-radius: 10rem;
+    }
+
+    /* shadow */
+    .sh-none {
+        box-shadow: none;
+    }
+
+    .sh-medium {
+        --shadow-x: 0px;
+        --shadow-y: 3px;
+        --shadow-blur: 6px;
+        --shadow-spread: 0px;
+    }
+
+    .ha-shadow {
+        transition: 0.2s;
+    }
+
+    .ha-shadow:hover,
+    .ha-shadow:focus,
+    .ha-shadow:active {
+        --shadow-x: 0px;
+        --shadow-y: 0px;
+        --shadow-blur: 3px;
+    }
+
+    /* sample customization */
+
+    /* variant="blue" */
+    .variant-gradient {
+        --gradient: linear-gradient(to bottom right, #EF5684, #567FEF);
+        --border-color: var(--gradient);
+        --fg-color: #FFFFFF;
+        --bg-color: #567FEF;
+    }
+
+    .variant-gradient .content {
+        background-image: var(--gradient);
+    }
+
+    /* variant="gradient-border" */
+    .variant-gradient-border {
+        --gradient: linear-gradient(to bottom right, #EF5684, #567FEF);
+        --border-color: var(--gradient);
+        --fg-color: #567FEF;
+        --bg-color: #FFFFFF;
+    }
+
+    /* variant="gradient" */
+    .variant-blue-light {
+        --fg-color: #567FEF;
+        --bg-color: #FFFFFF;
+        --bg-gradient-stop-1: #EBF0FF;
+        --bg-gradient-stop-2: #b9cbfc;
+        --border-color: #567FEF;
+    }

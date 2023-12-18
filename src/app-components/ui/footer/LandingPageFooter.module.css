@@ -1,0 +1,10 @@
+.footerPage{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media screen and (min-width:1024px) {
+    .footerPage{
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}

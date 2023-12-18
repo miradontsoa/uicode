@@ -1,0 +1,89 @@
+/* Main wrapper */
+.wrapper {
+    --border-radius: 1rem;
+    --img-main-width: 80%;
+    --img-back-width: 66%;
+    width: 100%;
+    transition: 0.2s;
+    position: relative;
+}
+
+.image-wrapper {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-main {
+    position: relative;
+    width: var(--img-main-width);
+    height: auto;
+    border-radius: var(--border-radius);
+    z-index: 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: start;
+    /* Optional : add shadow to main image */
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 0.17);
+}
+
+.image-back {
+    position: relative;
+    width: var(--img-back-width);
+    height: auto;
+    border-radius: var(--border-radius);
+    z-index: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: end;
+}
+
+/* Alignment */
+.ha-start .image-main {
+    justify-self: start;
+}
+
+.ha-start .image-back {
+    justify-self: end;
+}
+
+.ha-end .image-main {
+    justify-self: end;
+}
+
+.ha-end .image-back {
+    justify-self: start;
+}
+
+.ha-center .image-main {
+    justify-self: center;
+}
+
+.ha-center .image-back {
+    justify-self: center;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}

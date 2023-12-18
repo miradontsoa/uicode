@@ -1,0 +1,25 @@
+.image{
+    height: auto;
+}
+.content{
+    border-top: 1px solid rgba(var(--fg-color-rgb), 0.2);
+}
+.content h2{
+    /* font-size: 2rem; */
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+.content > :first-child{
+    
+    margin-top: 2rem;
+}
+.content > pre > div{
+    border-radius: 8px;
+    /* background-color: #f6f7f9 !important; */
+}
+.content > pre > div {
+    max-height: 40rem;
+    overflow: auto;
+    background-color: rgba(var(--primary-rgb), 0.1);
+}

@@ -1,0 +1,169 @@
+:root {
+  /* Colors */
+  --blue: #0896e6;
+  --blue-rgb: 8, 150, 230;
+  --cyan: #2bbcfa;
+  --cyan-rgb: 43, 188, 250;
+  --green: #09da83;
+  --green-rgb: 9, 218, 131;
+  --indigo: #6610f2;
+  --indigo-rgb: 102, 16, 242;
+  --orange: #ff6724;
+  --orange-rgb: 255, 103, 36;
+  --pink: #ff18b2;
+  --pink-rgb: 255, 24, 178;
+  --purple: #544d9b;
+  --purple-rgb: 84, 77, 155;
+  --red: #ff5979;
+  --red-rgb: 255, 89, 121;
+  --teal: #029da8;
+  --teal-rgb: 2, 157, 168;
+  --yellow: #ebff45;
+  --yellow-rgb: 235, 255, 69;
+
+  --gray-100: #f8fafb;
+  --gray-100-rgb: 248, 250, 251;
+  --gray-200: #ebeaf5;
+  --gray-200-rgb: 235, 234, 245;
+  --gray-300: #dddce7;
+  --gray-300-rgb: 221, 220, 231;
+  --gray-400: #cac9d5;
+  --gray-400-rgb: 202, 201, 213;
+  --gray-500: #a6a6b1;
+  --gray-500-rgb: 166, 166, 177;
+  --gray-600: #706e8b;
+  --gray-600-rgb: 112, 110, 139;
+  --gray-700: #49495c;
+  --gray-700-rgb: 73, 73, 92;
+  --gray-800: #37363c;
+  --gray-800-rgb: 55, 54, 60;
+  --gray-900: #26262e;
+  --gray-900-rgb: 38, 38, 46;
+
+  --white: #ffffff;
+  --white-rgb: 255, 255, 255;
+  // --white-primary: #f2f2fb;
+  --white-primary: #f8f9fa;
+  --white-primary-rgb: 248, 250, 251;
+  --black: #2f3039;
+  --black-rgb: 47, 48, 57;
+  --black-primary: #37363c;
+
+  --gray: var(--gray-600);
+  --gray-rgb: var(--gray-600-rgb);
+  --gray-light: var(--gray-200);
+  --gray-medium: var(--gray-500);
+  --gray-dark: var(--gray-700);
+  --gray-primary: var(--gray-400);
+
+  /* Theme colors */
+  // --primary: #5325ff;
+  // --primary-darker: #4c16df;
+  // --primary-rgb: 83, 37, 255;
+
+  
+  // --primary: #4c64d8;
+  // --primary-darker: #6c2ae6;
+  // --primary-rgb: 76, 100, 216;
+  
+  --primary: #556ff6;
+  --primary-darker: #4c16df;
+  --primary-rgb: 85, 111, 246;
+
+  --secondary: #FF0E48;
+  --secondary-rgb:  255, 14, 72;
+  --success: var(--green);
+  --success-rgb: var(--green-rgb);
+  --info: var(--cyan);
+  --info-rgb: var(--cyan-rgb);
+  --warning: var(--yellow);
+  --warning-rgb: var(--yellow-rgb);
+  --danger: var(--red);
+  --danger-rgb: var(--red-rgb);
+  --light: var(--gray-100);
+  --light-rgb: var(--gray-100-rgb);
+  --dark: var(--black);
+  --dark-rgb: var(--black-rgb);
+
+  /* dark/light theme color */
+  --fg-color: var(--dark);
+  --fg-color-rgb: var(--dark-rgb);
+  --bg-color: var(--white);
+  --bg-color-rgb: var(--white-rgb);
+  --fg-color-primary: var(--black-primary);
+  --bg-color-primary: var(--white-primary);
+  // --bg-accent-color: var(--light);
+  // --bg-accent-color-rgb: var(--light-rgb);
+
+  --border-color: #e0dff1;
+
+  // Gradient Color
+  --gradient-primary: radial-gradient(
+      100% 100% at 10% 110%,
+      #f89f1a,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at 10% -25%,
+      var(--primary),
+      rgba(104, 26, 248, 0.7),
+      transparent
+    ),
+    linear-gradient(to bottom right, #ff77e8, var(--primary));
+  // linear-gradient(to bottom right, #ff77e8, #d1175e);
+
+  // Sizes
+  --appbar-primary-height: 4.5rem;
+  --appbar-secondary-height: 3rem;
+
+  --sidebar-reduced-size: 5rem;
+  // --sidebar-normal-size: 16.25rem;
+  --sidebar-normal-size: 14rem;
+  --sidebar-large-size: 22.5rem;
+
+  --page-margin-x: 1rem;
+  --page-margin-y: 1rem;
+  @media screen and (min-width: $breakpoint-md) {
+    --page-margin-x: 2rem;
+    --page-margin-y: 2rem;
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    --appbar-primary-height: 5rem;
+    --page-margin-x: 2rem;
+    --page-margin-y: 2rem;
+  }
+  /* @media screen and (min-width: $breakpoint-lg) {
+    --page-margin-x: 4rem;
+    --page-margin-y: 4rem;
+  } */
+  --layout-gap-y: 3rem;
+
+  --content-margin-x: 1rem;
+  --content-margin-y: 1rem;
+  @media screen and (min-width: $breakpoint-lg) {
+    --content-margin-x: 2rem;
+    --content-margin-y: 2rem;
+  }
+  --scroll-margin: var(--appbar-primary-height);
+  @media screen and (min-width: $breakpoint-lg) {
+    --scroll-margin: calc(var(--appbar-primary-height) + 2rem);
+  }
+
+  --page-width-sm: 45rem; // 720px
+  --page-width-md: 64rem; // 1024px
+  --page-width-lg: 90rem; // 1440px
+
+  /* Font size */
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  /* Font family */
+  --font-family-sans-serif: "Inter Tight", "Inter", "SF Pro Display", "Segoe UI",
+    "Noto Sans", "Helvetica", -apple-system, system-ui, BlinkMacSystemFont,
+    sans-serif;
+  --font-family-serif: "Times New Roman", serif;
+  --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}

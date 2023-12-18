@@ -1,0 +1,104 @@
+.wrapper {
+    --fg-color: #303030;
+    --circle-1-color: #303030;
+    --circle-2-color: rgba(48, 48, 48, 0.25);
+    --size: 5rem;
+    --padding: 0.5rem;
+    --circle-1-size: 3rem;
+    --circle-2-size: 3rem;
+    --duration: 1.5s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--fg-color);
+}
+
+.circles {
+    position: relative;
+    /* height: max(var(--circle-1-size), var(--circle-2-size)); */
+    height: var(--circle-1-size);
+    width: var(--circle-1-size);
+    display: block
+}
+
+.circle-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--circle-1-color);
+    border-radius: var(--circle-1-size) ;
+    animation: bounce1 var(--duration) infinite ease;
+}
+
+.circle-2 {
+    position: absolute;
+    top: calc(0.5*(var(--circle-1-size) - var(--circle-2-size)));
+    left: calc(0.5*(var(--circle-1-size) - var(--circle-2-size)));
+    height: var(--circle-2-size);
+    width: var(--circle-2-size);
+    background-color: var(--circle-2-color);
+    border-radius: var(--circle-2-size) ;
+    animation: bounce2 var(--duration) infinite linear;
+}
+
+/* bounce animation */
+@keyframes bounce1 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes bounce2 {
+    0% {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.content {
+    margin-top: 1rem;
+}
+/* Size */
+
+.s-small {
+    --font-size: 0.75rem;
+    --gap: 0.125rem;
+    --size: 1.25rem;
+    --padding: 0.125rem;
+    --close-icon-margin: 0rem;
+}
+
+.s-medium {
+    --size: 1.5rem;
+    --padding: 0.125rem;
+    --close-icon-margin: 0.1875rem;
+}
+
+.s-large {
+    --size: 1.75rem;
+    --padding: 0.25rem;
+    --close-icon-margin: 0.25rem;
+}
+
+
+/* Sample customization */
+/* variant="blue" */
+.variant-blue {
+    --circle-1-color: #567FEF;
+    --circle-2-color: rgba(86, 127, 239, 0.5);
+}

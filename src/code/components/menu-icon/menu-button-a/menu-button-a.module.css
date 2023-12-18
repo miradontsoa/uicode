@@ -1,0 +1,72 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #7a7a7a;
+    --border-color: #c0c0c0;
+    --border-radius: 1rem;
+    --icon-size: 3.5rem;
+    --bar-size: 2rem;
+    --bar-height: 2px;
+    --bar-radius: 4px;
+    --bar-gap: 6px;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-wrapper {
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.btn-wrapper:hover,
+.btn-wrapper:focus {
+    outline: none;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    display: block;
+    width: var(--bar-size);
+    height: var(--bar-height);
+    border-radius: var(--bar-radius);
+    background-color: var(--fg-color);
+    margin-bottom: var(--bar-gap);
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.bar3 {
+    margin-bottom: 0;
+}
+
+.open .bar2 {
+    transform: scaleX(0);
+    opacity: 0;
+}
+.open .bar1 {
+    transform: translateY(calc(var(--bar-gap) + var(--bar-height))) rotate(45deg);
+}
+.open .bar3 {
+    transform: translateY(calc(-1 * (var(--bar-gap) + var(--bar-height)))) rotate(-45deg);
+}
+
+/* Alternative colors and variants */
+.c-style-a{
+    --bar-height: 4px;
+    --fg-color: #2e35ee;
+    --border-color: transparent;
+}

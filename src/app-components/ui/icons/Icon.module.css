@@ -1,0 +1,21 @@
+.icon{
+    display: inline-block;
+    /* align-items: center; */
+    line-height: 0;
+    /* font-size: 1.25em ; */
+}
+.size-text{
+    font-size: 1em ;
+}
+.size-small{
+    font-size: 0.875em ;
+}
+.size-medium{
+    font-size: 1.25em ;
+}
+.size-large{
+    font-size: 1.5em ;
+}
+.size-x-large{
+    font-size: 2em ;
+}

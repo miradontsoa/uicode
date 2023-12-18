@@ -1,0 +1,185 @@
+.button {
+    --bg-color: #567FEF;
+    --fg-color: #ffffff;
+    --icon-margin: 0.375rem;
+    --icon-width: 1.75rem;
+    --height: calc(var(--icon-width) + 2 * var(--icon-margin));
+    --shadow-color: #567FEF;
+    --shadow-offset: 4px;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0;
+    min-height: var(--height);
+    min-width: var(--height);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    transition: 0.2s;
+}
+
+.button.active,
+.button:active,
+.button:focus,
+.button:hover {
+    text-decoration: none;
+    filter: brightness(90%);
+}
+.button > * {
+    z-index: 1;
+}
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 1px var(--shadow-color),
+        0px var(--shadow-offset) 10px -2px var(--shadow-color);
+}
+
+.sh-medium.active,
+.sh-medium:active,
+.sh-medium:focus,
+.sh-medium:hover {
+    box-shadow: 0px 0px 1px var(--shadow-color);
+}
+
+/* Text */
+.text {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Icon */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10rem;
+    height: var(--icon-width);
+    width: var(--icon-width);
+    background-color: var(--fg-color);
+    color: var(--bg-color);
+}
+
+.icon-right {
+    margin-left: calc(-1 * var(--icon-margin));
+    margin-right: var(--icon-margin);
+}
+
+.icon-left {
+    margin-left: var(--icon-margin);
+    margin-right: calc(-1 * var(--icon-margin));
+}
+
+/* Icon only */
+.icon-only .icon {
+    margin: 0;
+}
+
+/* Height */
+.h-medium {
+    --height: 2.5rem;
+}
+
+.h-large {
+    --height: 3rem;
+}
+
+/* Size */
+.s-x-small {
+    font-size: 0.75rem;
+    --icon-margin: 0.125rem;
+    --icon-width: 1.25rem;
+}
+
+.s-small {
+    font-size: 0.875rem;
+    --icon-margin: 0.25rem;
+    --icon-width: 1.5rem;
+}
+
+.s-large {
+    font-size: 1.25rem;
+    --icon-width: 2.25rem;
+}
+
+/* Width */
+.w-full {
+    width: 100%;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.25rem;
+}
+
+.r-medium {
+    border-radius: 0.5rem;
+}
+
+.r-large {
+    border-radius: 1rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* sample customization */
+.variant-red {
+    --fg-color: white;
+    --bg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(252, 57, 99);
+}
+
+.variant-light-blue {
+    --fg-color: #567FEF;
+    --bg-color: rgb(243, 243, 243);
+    --shadow-color: #567FEF;
+}
+
+.variant-light-red {
+    --bg-color: rgb(250, 232, 233);
+    --fg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(252, 57, 99);
+}
+
+.variant-purple {
+    --fg-color: white;
+    --bg-color: rgb(100, 13, 240);
+    --shadow-color: rgb(158, 57, 252);
+}
+
+.variant-purple::before {
+    z-index: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, rgb(240, 13, 62), rgb(100, 13, 240));
+    animation: hue-anim 2s infinite linear;
+}
+
+@keyframes hue-anim {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(-60deg);
+    }
+
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}

@@ -1,0 +1,38 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #464646;
+    --border-color: #ffffff;
+    --border-size: 2px;
+    --gap: -1rem;
+    color: var(--fg-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatars {
+    display: flex;
+    align-items: center;
+}
+.avatar-item{
+    margin-left: var(--gap);
+}
+.avatar-item:first-child{
+    margin-left: 0;
+}
+
+/* To left direction */
+.avatars.d-to-left {
+    flex-direction: row-reverse;
+}
+.avatars.d-to-left .avatar-item{
+    margin-left: 0;
+    margin-right: var(--gap);
+}
+.avatars.d-to-left .avatar-item:first-child{
+    margin-left: 0;
+    margin-right: 0;
+}
+.content{
+    margin-left: 0.25rem;
+}

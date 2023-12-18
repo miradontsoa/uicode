@@ -1,0 +1,191 @@
+.wrapper {
+    --fg-color: #303030;
+    --max-width: 1024px;
+    --padding-y: 1rem;
+    --navbar-1-bg-color: #F4F4F4;
+    --navbar-scroll-bg-color: #F4F4F4;
+    --navbar-1-height: 4rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* .navbar .navbar-content */
+.navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 1rem;
+    max-width: var(--max-width);
+}
+
+/* First Navigation Bar */
+.navbar-1 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: var(--padding-y);
+    padding-right: var(--padding-y);
+    min-height: var(--navbar-1-height);
+    background-color: var(--navbar-1-bg-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar-1 .logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-1 .logo .logo-img {
+    height: 2rem;
+    width: auto;
+}
+
+
+/* Navbar content for navbar-1 and navbar-2 */
+.nav-start {
+    display: flex;
+    flex-basis: auto;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.nav-end {
+    display: flex;
+    flex-basis: auto;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    list-style: none;
+}
+
+/* Scrollable navigation bar */
+.navbar-scrollable {
+    overflow-y: auto;
+    background-color: var(--navbar-scroll-bg-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-scroll-container {
+    width: 100%;
+}
+
+/* nav-list-actions type list */
+.nav-list-actions {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list-actions .item-btn {
+    padding: 0 0.25rem;
+    min-width: 2rem;
+    height: 2rem;
+    color: currentColor;
+    background-color: transparent;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    text-wrap: nowrap;
+}
+
+.nav-list-actions .item-badge {
+    position: absolute;
+    top: -0.125rem;
+    right: -0.125rem;
+    background-color: #df2453;
+    color: white;
+    font-size: 0.625rem;
+    padding: 0.3755em 0.5em;
+    line-height: 0.75;
+    border-radius: 5rem;
+}
+
+.nav-list-actions .item-btn:focus {
+    outline: none;
+}
+.nav-list-actions .item-btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-list-actions .item-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/* nav-list-scroll type list */
+.nav-list-scroll {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: var(--padding-y);
+    padding-right: var(--padding-y);
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: -moz-fit-content;
+    width: fit-content;
+    /* width: 100dvw; */
+}
+
+.nav-list-scroll .item-btn {
+    padding: 0 0.5rem;
+    color: currentColor;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    min-height: 2.5rem;
+    position: relative;
+    text-wrap: nowrap;
+    border: none;
+    color: currentColor;
+    background-color: transparent;
+    position: relative;
+}
+.nav-list-scroll .item-btn.active {
+    border: 2px solid rgba(128, 128, 128, 0.25);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2rem;
+}
+
+.nav-list-scroll .item-btn:focus {
+    outline: none;
+}
+
+.nav-list-scroll .item-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}

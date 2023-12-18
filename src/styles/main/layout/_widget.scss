@@ -1,0 +1,10 @@
+.widget-demo {
+  padding: 0rem;
+  scroll-margin: var(--scroll-margin);
+  @media screen and (min-width: 992px) {
+    overflow: hidden;
+    // padding: 1rem;
+    // border-radius: 0.75rem;
+    // border: 1px solid rgba(var(--primary-rgb), 0.2);
+  }
+}

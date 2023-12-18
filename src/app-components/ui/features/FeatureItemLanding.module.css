@@ -1,0 +1,102 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: transparent;
+    --fg-color: currentColor;
+    --shadow-offset: 4px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    font-size: 1em;
+    width: 100%;
+    padding: 0rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    position: relative;
+    font-size: var(--font-size);
+}
+
+.content {
+    position: relative;
+}
+
+.link {
+    color: currentColor;
+}
+
+.link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.link:hover .wrapper {
+    --shadow-offset: 0px;
+}
+
+
+
+.icon {
+    margin-bottom: 0.75rem;
+    font-size: 3rem;
+    line-height: 1;
+    background-color: var(--primary);
+    color: #fff;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.175;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+
+/* Text content */
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+}
+
+.desc {
+    font-size: var(--font-size);
+    margin-bottom: 0;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.5rem;
+}
+
+.r-medium {
+    border-radius: 1rem;
+}
+
+.r-large {
+    border-radius: 1.5rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 4px -1px var(--shadow-color);
+}
+
+/* sample customization */

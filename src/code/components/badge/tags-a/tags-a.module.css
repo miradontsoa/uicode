@@ -1,0 +1,15 @@
+.tags {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin: 0;
+}
+
+.tag::after {
+    content: ",";
+    margin-right: 0.125em;
+}
+
+.tag:last-child::after {
+    content: "";
+}

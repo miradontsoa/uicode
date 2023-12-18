@@ -1,0 +1,233 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: #383838;
+    --fg-color: #ffffff;
+    --border-radius: 1rem;
+    --avatar-size: 4rem;
+    --border-color: #ffffff;
+    --border-size: 0px;
+    --label-size: 1.25rem;
+    --label-border-size: 0px;
+    --color-red: #ff2f52;
+    --color-green: #2fff7f;
+    --color-gradient: linear-gradient(to bottom right, #ffd92f, #ff2f52);
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    position: relative;
+}
+
+/* Avatar wrapper */
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--border-color);
+}
+
+/* Image */
+.image {
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+/* Content */
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Label */
+.label {
+    z-index: 1;
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 0rem;
+    bottom: 0rem;
+    width: var(--label-size);
+    height: var(--label-size);
+    border-radius: var(--label-size);
+    border: var(--label-border-size) solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+/* Label color, you may add yours here */
+.lc-green {
+    background-color: var(--color-green);
+}
+
+.lc-red {
+    background-color: var(--color-red);
+}
+
+.ls-x-small {
+    --label-size: 0.875rem;
+}
+
+.ls-small {
+    --label-size: 1rem;
+}
+
+.ls-medium {
+    --label-size: 1.25rem;
+}
+
+.ls-large {
+    --label-size: 1.5rem;
+}
+
+/* Size */
+.s-small {
+    --avatar-size: 2.5rem;
+}
+
+.s-medium {
+    --avatar-size: 4rem;
+}
+
+.s-large {
+    --avatar-size: 5rem;
+}
+
+.s-x-large {
+    --avatar-size: 8rem;
+}
+
+.s-full {
+    --avatar-size: 100%;
+}
+
+/* Border Color, you may add yours*/
+.bdc-white {
+    --border-color: #fff;
+}
+
+.bdc-black {
+    --border-color: #292929;
+}
+
+.bdc-green {
+    --border-color: var(--color-green);
+}
+
+/* Border size */
+.bds-none {
+    --border-size: 0px;
+}
+
+.bds-small {
+    --border-size: 2px;
+}
+
+.bds-medium {
+    --border-size: 4px;
+}
+
+.bds-large {
+    --border-size: 8px;
+}
+
+/* Border position */
+.bdp-inside .avatar {}
+
+.bdp-outside .avatar {
+    border: none;
+    position: relative;
+}
+
+.bdp-outside .avatar::before {
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--border-size));
+    bottom: calc(-1 * var(--border-size));
+    left: calc(-1 * var(--border-size));
+    right: calc(-1 * var(--border-size));
+    border-radius: calc(var(--border-radius) * 1.5);
+    border: var(--border-size) solid var(--border-color);
+}
+
+.bdp-aureole .avatar {
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.bdp-aureole .avatar::before {
+    /* --aureole-gap: var(--border-size); */
+    --aureole-gap: var(--border-size);
+    content: "";
+    position: absolute;
+    top: calc(-1 * var(--border-size) - var(--aureole-gap));
+    bottom: calc(-1 * var(--border-size) - var(--aureole-gap));
+    left: calc(-1 * var(--border-size) - var(--aureole-gap));
+    right: calc(-1 * var(--border-size) - var(--aureole-gap));
+    /* border: var(--border-size) solid var(--border-color); */
+    border-radius: calc(var(--border-radius) * 1.5);
+
+    /* Using css mask */
+    /* padding: var(--border-size);
+    background: var(--color-gradient);
+    mask: linear-gradient(#fff, #fff) content-box,
+        linear-gradient(#fff, #fff);
+    mask-composite: exclude; */
+    border: var(--border-size) solid transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, green, gold);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    z-index: -1;
+
+    /* background: linear-gradient(red, blue);
+    background-clip: padding-box; */
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0px;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+.r-full {
+    --border-radius: var(--avatar-size);
+}
+
+/* Customized color */
+.c-blue {
+    --bg-color: #95beff;
+    --fg-color: #2962b8;
+}
+
+.c-orange {
+    --bg-color: rgba(255, 162, 22, 0.3);
+    --fg-color: rgb(255, 162, 22);
+}

@@ -1,0 +1,37 @@
+.button-a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 1.25rem;
+  min-height: 2.5rem;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px -2px #567fef;
+  background: linear-gradient(to bottom right, #05dbf2, #7d17d1);
+  transition: 0.3s;
+  animation: hue-anim 2s infinite linear;
+}
+
+/* Hue animation */
+@keyframes hue-anim {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(60deg);
+  }
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+/* on hover animation */
+.button-a:hover {
+  text-decoration: none;
+  animation: none;
+  box-shadow: 0px 0px 1px #567fef, 0px 3px 6px -2px #567fef;
+}

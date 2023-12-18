@@ -1,0 +1,23 @@
+.page-container {
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  // justify-content: center;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  height: var(--appbar-primary-height);
+  width: 100%;
+  z-index: 100;
+
+  background-color: rgba(var(--bg-color-rgb), 0.7);
+  // background-color: transparent;
+}
+
+.page-main {}
+
+.page-footer {}
+
+@import "page/landing-page"

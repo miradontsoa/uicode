@@ -1,0 +1,47 @@
+@media (prefers-color-scheme: dark) {
+  // TODO : Code explorer (may be change the plugin)
+  @import "init/root_dark";
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: var(--fg-color);
+    // background: var(--bg-color);
+    background: #0D0D0D;
+  }
+
+  .bg-gradient-bg {
+    background: linear-gradient(to bottom right,#323235, var(--black-primary) );
+  }
+
+
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .widget-demo {
+    color: #303030;
+  }
+
+  // code
+  .language-tsx,
+  .language-css {
+    color: white !important;
+    text-shadow: var(--bg-color) 0px 1px !important;
+  }
+
+  .language-tsx {
+    color: white !important;
+
+    .token {
+      background: transparent !important;
+    }
+
+    .imports,
+    .maybe-class-name {
+      color: white !important;
+    }
+  }
+}

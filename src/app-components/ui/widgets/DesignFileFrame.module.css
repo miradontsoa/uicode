@@ -1,0 +1,6 @@
+.wrapper{
+    border-radius: 0.5rem;
+    border: 1px solid rgba(var(--black-rgb), 0.1);
+    padding: 1rem;
+    background-color: rgba(var(--primary-rgb), 0.1);
+}

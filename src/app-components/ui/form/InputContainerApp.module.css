@@ -1,0 +1,152 @@
+.input-container {
+    --bg-color: #ffffff;
+    --fg-color: #383838;
+    --height: 2.5rem;
+    --border-color: #383838;
+    --shadow-color: #3838385b;
+    --focus-color: #045ccf;
+    --shadow-offset: 4px;
+    --shadow-flat-offset: 6px;
+    --border-width: 0px;
+    --border-color: currentColor;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0em 0.25em;
+    min-height: var(--height);
+    width: 100%;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border: var(--border-size) solid var(--border-color);
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 1px var(--shadow-color),
+        0px var(--shadow-offset) 10px -2px var(--shadow-color);
+}
+
+.sh-medium.active,
+.sh-medium:active,
+.sh-medium:focus,
+.sh-medium:hover {
+    box-shadow: 0px 0px 1px var(--shadow-color);
+}
+
+.sh-flat {
+    --shadow-color: currentColor;
+    box-shadow: var(--shadow-flat-offset, 6px) var(--shadow-flat-offset, 6px) 0px 0px var(--shadow-color);
+}
+
+.input-container:focus-within {
+    box-shadow: 0px 0px 2px var(--focus-color);
+    --border-color: var(--focus-color);
+}
+
+/* Input and inner label wrapper */
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input-wrapper>input,
+.input-wrapper>textarea {
+    width: 100%;
+    min-height: var(--height);
+    border: none;
+    outline: none;
+    padding: 0.25em 0.5em;
+    background-color: transparent;
+    color: currentColor;
+}
+
+.input-wrapper>.label {
+    top: 0.25em;
+    left: 0.75em;
+    position: absolute;
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+.input-wrapper>.label~input {
+    padding-top: calc((var(--height) / 2) - 0.5em);
+    padding-bottom: 0em;
+}
+
+/* Before element */
+.before-element {
+    margin-left: 0.5em;
+    /* margin-right: 0.25em; */
+    line-height: 1;
+}
+
+/* After element */
+.after-element {
+    line-height: 1;
+}
+
+/* Height */
+.h-medium {
+    --height: 2.5rem;
+}
+
+.h-large {
+    --height: 3rem;
+}
+
+/* Size */
+.s-large {
+    font-size: 1.25rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+/* Border size */
+.b-thin {
+    --border-size: 1px;
+}
+
+.b-medium {
+    --border-size: 2px;
+}
+
+.b-large {
+    --border-size: 4px;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.25rem;
+}
+
+.r-medium {
+    border-radius: 0.5rem;
+}
+
+.r-large {
+    border-radius: 1rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* sample customization */
+.variant-blue {
+    --fg-color: #4d77ff;
+    --border-color: #4d77ff;
+    --shadow-color: #4d77ff5b;
+}
+.variant-primary {
+    --fg-color: currentColor;
+    --border-color: var(--primary);
+    --shadow-color: rgba(var(--primary-rgb), 0.2);
+}

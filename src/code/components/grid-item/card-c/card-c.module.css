@@ -1,0 +1,147 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: rgb(255, 255, 255);
+    --fg-color: rgb(56, 56, 56);
+    --border-radius: 1rem;
+    --padding: 0.75rem;
+    --body-margin-y: 0.75rem;
+    --body-margin-x: 0.75rem;
+    --body-border-radius: calc(var(--border-radius) - var(--padding)/2);
+    --action-icon-color: #ffffff;
+    --action-icon-size: 2rem;
+    width: 100%;
+    padding: 0;
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Image wrapper */
+.image-wrapper {
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 0;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-controls {
+    position: absolute;
+    top: var(--padding);
+    right: var(--padding);
+}
+
+.action-icon {
+    padding: 0;
+    border: none;
+    outline: none;
+    width: var(--action-icon-size);
+    height: var(--action-icon-size);
+    font-size: var(--action-icon-size);
+    color: var(--action-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.action-icon:hover,
+.action-icon:active,
+.action-icon:focus {
+    border: none;
+    outline: none;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Body */
+.body {
+    bottom: var(--padding);
+    left: var(--padding);
+    right: var(--padding);
+    position: absolute;
+    z-index: 2;
+    padding: var(--body-margin-y) var(--body-margin-x);
+    background: var(--bg-color);
+    color: var(--fg-color);
+    border-radius: var(--body-border-radius);
+}
+
+.body>a,
+.body .body-link {
+    color: currentColor;
+}
+
+.body>a:hover,
+.body .body-link:hover {
+    text-decoration: none;
+}
+
+/* body content layout */
+.body-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.b-left {
+    flex-grow: 1;
+}
+
+.b-right {
+    flex-grow: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Title text */
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.desc p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.view-icon {
+    min-width: 2rem;
+    min-height: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+/* Customized color */
+.variant-dark{
+    --fg-color: #ffffff;
+    --bg-color: rgba(56, 56, 56, 0.5);
+}

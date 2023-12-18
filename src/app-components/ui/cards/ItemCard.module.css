@@ -1,0 +1,109 @@
+.wrapper {
+  --bd-radius: 1rem;
+  --bd-color: rgba(var(--fg-color-rgb), 0.2);
+  width: 100%;
+  /* box-shadow: 0px 0px 1px 0px var(--bd-color),
+    0px 2px 4px var(--bd-color); */
+  box-shadow: 0px 0px 1px 0px var(--bd-color), 0px 8px 24px -12px var(--bd-color);
+  overflow: hidden;
+  border-radius: var(--bd-radius);
+  display: block;
+  transition: 0.2s;
+}
+
+.wrapper:hover {
+  box-shadow: 0px 0px 1px 0px var(--bd-color), 0px 8px 12px -12px var(--bd-color);
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.wrapper a:hover {
+  text-decoration: none;
+}
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(var(--fg-color-rgb), 0.075);
+}
+
+.tag-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.image.img-landscape {
+  aspect-ratio: 4/3;
+}
+.image.img-portrait {
+  aspect-ratio: 3/4;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  /* font-size: 1.125rem; */
+  line-height: 1.5;
+  /* line-height: 1.2; */
+}
+
+.desc {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.body {
+  margin: 1rem;
+}
+
+.footer {
+  /* border-top: 1px solid var(--bd-color); */
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btns .btn {
+  border: none;
+  outline: none;
+  flex: 1 0;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  border-left: 1px solid var(--bd-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  background-color: rgba(var(--primary-rgb), 0.2);
+}
+
+.btns .btn:first-child {
+  border-left: none;
+}
+
+.btn {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn:hover {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background-color: rgba(var(--primary-rgb), 0.05);
+  ;
+}

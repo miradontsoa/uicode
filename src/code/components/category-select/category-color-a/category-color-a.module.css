@@ -1,0 +1,65 @@
+.wrapper {
+    --outline-width: 2px;
+    --outline-color: rgba(75, 75, 75, 0.5);
+    --outline-active-color: rgb(29, 29, 29);
+    --border-radius: 16px;
+    --icon-width: 1rem;
+    display: flex;
+    gap: calc(var(--icon-width) / 2);
+}
+
+.color-icon {
+    all: unset;
+    border: none;
+    outline: none;
+    display: block;
+    position: relative;
+    border-radius: var(--border-radius);
+    width: var(--icon-width);
+    height: var(--icon-width);
+    box-shadow: 0px 0px 0px 1px var(--outline-color);
+}
+.color-icon:active,
+.color-icon:hover,
+.color-icon:focus{
+    outline: none;
+}
+
+.color-icon.active{
+    box-shadow: 0px 0px 0px var(--outline-width) var(--outline-active-color);
+}
+
+/* Icon border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.375rem;
+}
+
+.r-large {
+    --border-radius: 0.5rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+
+/* Size */
+.s-small {
+    --icon-width: 0.875rem;
+}
+
+.s-medium {
+    --icon-width: 1rem;
+}
+
+.s-large {
+    --icon-width: 1.25rem;
+}

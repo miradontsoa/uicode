@@ -1,0 +1,32 @@
+// Other
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.visually-hidden:not(:focus):not(:active):not(:focus-within) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    border-width: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.min-h-window {
+    --footer-height: 10.5rem;
+    min-height: calc(100vh - var(--appbar-primary-height) - var(--footer-height));
+}
+.min-h-window-app {
+    --footer-height: 6rem;
+    min-height: calc(100vh - var(--appbar-primary-height) - var(--footer-height));
+}

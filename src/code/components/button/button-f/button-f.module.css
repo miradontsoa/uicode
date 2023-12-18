@@ -1,0 +1,133 @@
+.button {
+    --fg-color: #567FEF;
+    --bg-color: #ffffff;
+    --shadow-color: #567FEF;
+    --shadow-offset: 4px;
+    --height: 2.5rem;
+    --border-size: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.25em 1em;
+    min-height: var(--height);
+    min-width: var(--height);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    border: var(--border-size) solid var(--fg-color);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0px 0px var(--shadow-color);
+    transition: 0.2s;
+}
+
+.button:hover {
+    --shadow-offset: 1px;
+    --shadow-color: var(--fg-color);
+    /* background-color: var(--fg-color); */
+}
+
+/* Icon only */
+.button.icon-only {
+    padding: 0rem;
+}
+
+/* Height */
+.h-medium {
+    --height: 2.5rem;
+}
+
+.h-large {
+    --height: 3rem;
+}
+
+/* Size */
+.s-x-small {
+    font-size: 0.75rem;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+.s-small {
+    font-size: 0.875rem;
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+.s-large {
+    font-size: 1.25rem;
+    min-height: 3rem;
+    min-width: 3rem;
+}
+
+/* Width */
+.w-full {
+    width: 100%;
+}
+
+/* Border size */
+.bd-thin {
+    --border-size: 1px;
+}
+
+.bd-medium {
+    --border-size: 2px;
+}
+
+.bd-thick {
+    --border-size: 4px;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.25rem;
+}
+
+.r-medium {
+    border-radius: 0.5rem;
+}
+
+.r-large {
+    border-radius: 1rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+
+/* sample customization */
+.variant-blue {
+    /* This is the default color */
+}
+
+.variant-red {
+    --bg-color: rgb(252, 227, 227);
+    --fg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(240, 13, 62);
+}
+
+.variant-black {
+    --bg-color: rgb(255, 255, 255);
+    --fg-color: rgb(48, 48, 48);
+    --shadow-color: rgb(48, 48, 48);
+}
+
+.variant-dark-blue {
+    --bg-color: #567FEF;
+    --fg-color: #ffffff;
+    --shadow-color: rgba(86, 127, 239, 0.5);
+}
+
+.variant-dark-red {
+    --bg-color: rgb(250, 232, 233);
+    --fg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(252, 57, 99);
+}

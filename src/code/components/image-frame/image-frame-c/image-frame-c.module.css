@@ -1,0 +1,65 @@
+/* Main wrapper */
+.wrapper {
+    --border-radius: 1rem;
+    --img-main-width: 100%;
+    --img-bottom-width: 50%;
+    --img-bottom-margin: 5rem;
+    width: 100%;
+    transition: 0.2s;
+    position: relative;
+}
+
+
+.image-wrapper {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: block;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-main {
+    width: calc(var(--img-main-width) - var(--img-bottom-margin));
+    height: auto;
+    border-radius: var(--border-radius);
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-bottom: var(--img-bottom-margin);
+}
+
+
+.image-bottom {
+    width: var(--img-bottom-width);
+    height: auto;
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+    justify-self: end;
+}
+
+
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}

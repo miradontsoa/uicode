@@ -1,0 +1,109 @@
+.wrapper {
+    --fg-color: #FFFFFF;
+    --bg-color: #D1D9F0;
+    --bar-color: #567FEF;
+    --font-size: 0.875rem;
+    --height: 1rem;
+    --padding: 0px;
+    --border-size: 0px;
+    --border-color: #567FEF;
+    --border-radius: 1rem;
+    font-size: var(--font-size);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    height: var(--height);
+    padding: var(--padding);
+    outline: var(--border-size) solid var(--border-color);
+    outline-offset: calc(-1 * var(--border-size));
+    border-radius: var(--border-radius);
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar {
+    background-color: var(--bar-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: calc(var(--border-radius) - var(--padding));
+    transition: width 0.6s;
+    height: 100%;
+}
+
+/* Padding */
+.p-small {
+    --padding: 0.125rem;
+}
+
+.p-medium {
+    --padding: 0.25rem;
+}
+
+/* Border */
+.b-thin {
+    --border-size: 1px;
+}
+
+.b-medium {
+    --border-size: 2px;
+}
+
+
+/* Size */
+
+.s-small {
+    --height: 0.75rem;
+}
+
+.s-medium {
+    --height: 1rem;
+}
+
+.s-large {
+    --height: 1.75rem;
+}
+
+/* Border size */
+.b-none {
+    --border-size: 0px;
+}
+
+.b-thin {
+    --border-size: 1px;
+}
+
+.b-medium {
+    --border-size: 2px;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.125rem;
+}
+
+.r-medium {
+    --border-radius: 0.25rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+/* sample customization */
+
+/* variant="blue-gradient" */
+.variant-blue-gradient {
+    --bg-color: #D1D9F0;
+    --bar-color: #567FEF;
+    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.17);
+}
+.variant-blue-gradient .bar {
+    background: linear-gradient(to bottom,#567FEF, #2C4CA5 );
+}

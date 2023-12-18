@@ -1,0 +1,118 @@
+.navbar-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+.navbar-logo {
+    flex-grow: 1;
+}
+
+.mobile-nav {
+    display: flex;
+}
+
+.mobile-nav-menu {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    transform: translateX(-1rem);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: var(--white-primary);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    padding: 0.75rem 0rem;
+}
+
+.mobile-nav-menu.open {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+}
+
+.menu-button {
+    min-width: 50%;
+    padding: 0.5rem 1rem;
+    padding-right: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+}
+
+.menu-button .icon,
+.menu-button .text {
+    display: inline-flex;
+    align-items: center;
+}
+
+.menu-button .icon {
+    margin-left: 4px;
+    font-size: 1.25rem;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-nav a:hover {
+    text-decoration: none;
+}
+
+.navbar-nav .nav-item {
+    width: 100%;
+    display: flex;
+}
+
+.navbar-nav .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    color: rgba(var(--fg-color-rgb), 0.7);
+    color: rgba(var(--primary-rgb), 1);
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    position: absolute;
+    content: "";
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    height: 4px;
+    width: 0rem;
+    border-radius: 5rem;
+    background-color: var(--primary);
+    transform: translateX(-50%);
+    transition: 0.15s;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--fg-color);
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active::after,
+.navbar-nav .nav-link:hover::after {
+    width: 2rem;
+}
+

@@ -1,0 +1,25 @@
+.content-content {
+  .breadcrumb {
+    margin-top: 0.25rem;
+    margin-bottom: 1.35rem;
+    @media screen and (min-width: $breakpoint-lg) {
+      margin-top: 0.25rem;
+    }
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 2rem;
+    }
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: calc(var(--appbar-primary-height) + 3rem);
+  }
+}

@@ -1,0 +1,22 @@
+##### Properties
+
+Props of the component:
+
+- `className` (string): Specifies the CSS class of the component.
+- `children` (ReactNode): React children of the component. Specifies the ReactNode placed inside the component.
+- `type` ("button" | "submit" | "reset" | "link"): Specifies the type of the button.
+- `size` ("x-small" | "small" | "medium" | "large"): Specifies the size of the button.
+- `width` ("auto" | "full"): Specifies the width of the button. "full" will make the button occupy 100% of the width of the parent and "auto" will set the width of the button to the width of the content.
+
+- `variant` ("default" | "black" | "blue" or a customized value): Specifies the color or theme variant of the component. See the "Sample CSS customization" below for an example of usage.
+
+- `onClick` (function): Fires when the button is clicked.
+
+##### Sample CSS customization
+
+```css
+.variant-blue {
+    --fg-color: #567FEF;
+    --hover-fg-color: rgba(86, 127, 239, 0.5);
+}
+```

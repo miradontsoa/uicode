@@ -1,0 +1,139 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: white;
+    --fg-color: #4d4d4d;
+    --shadow-offset: 4px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    position: relative;
+}
+.content{
+    position: relative;
+}
+
+.link {
+    color: currentColor;
+}
+
+.link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.link:hover .wrapper {
+    --shadow-offset: 0px;
+}
+
+
+
+.icon {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.icon-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.175;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+
+/* Text content */
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.desc {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.5rem;
+}
+
+.r-medium {
+    border-radius: 1rem;
+}
+
+.r-large {
+    border-radius: 1.5rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 4px -1px var(--shadow-color);
+}
+
+/* sample customization */
+
+/* variant="blue" */
+.variant-blue {
+    --bg-color: #632aff;
+    --fg-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+}
+
+.variant-blue .title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* variant="blue-white" */
+.variant-blue-white{
+    --bg-color: #FFFFFF;
+    --fg-color: #632aff;
+    padding: 2rem;
+}
+.variant-blue-simple .desc{
+    color: #4d4d4d;
+}
+
+/* variant="blue-simple" */
+.variant-blue-simple{
+    --bg-color: transparent;
+    --fg-color: #632aff;
+    box-shadow: none;
+    padding: 0;
+}
+.variant-blue-simple .desc{
+    color: #4d4d4d;
+}
+/* variant="red" */
+.variant-red {
+    --bg-color: rgb(252, 227, 227);
+    --fg-color: rgb(240, 13, 62);
+    --shadow-color: rgb(240, 13, 62);
+    --shadow-offset: 6px;
+    box-shadow: inset 0px 0px 2px 0px var(--shadow-color),
+        0px var(--shadow-offset) 0px 0px var(--shadow-color);
+}
+
+/* variant="simple" */
+.variant-simple{
+    --bg-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+

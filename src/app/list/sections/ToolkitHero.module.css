@@ -1,0 +1,34 @@
+.url {
+    display: flex;
+    gap: 0.5rem;
+    --font-size: 1rem;
+}
+
+.urlIcon {
+    font-size: var(--font-size);
+    width: var(--font-size);
+    height: var(--font-size);
+    margin-top: 0.275em;
+}
+
+.urlText {
+    font-size: var(--font-size);
+    color: var(--primary);
+}
+
+.desc {
+    font-size: 1rem;
+}
+
+.separator {
+    height: 1.5px;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--primary), rgba(var(--primary-rgb), 0.0));
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}

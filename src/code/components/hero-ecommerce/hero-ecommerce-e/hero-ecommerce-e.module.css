@@ -1,0 +1,137 @@
+.section {
+    --bg-color: #FFFFFF;
+    --fg-color: #303030;
+    --min-height: 640px;
+    --padding-y: 0rem;
+    --content-max-width: 480px;
+    --btn-fg-color: #FFFFFF;
+    --btn-bg-color: #303030;
+    width: 100%;
+    position: relative;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    min-height: var(--min-height);
+    padding-top: var(--padding-y);
+    padding-bottom: var(--padding-y);
+    padding-left: 0;
+    padding-right: 0;
+    /* Content alignment */
+    display: grid;
+}
+
+@media (min-width: 1024px) {
+    .section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+ 
+/* Background image */
+.part-image{
+    display: block;
+    height: 100%;
+}
+
+.part-image .image,
+.part-image .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.part-content{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    max-width: var(--content-max-width);
+    padding: 2rem;
+}
+
+@media screen and (min-width:1024px) {
+    .content {
+        padding: 3rem;
+    }
+}
+
+.heading-1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+@media screen and (min-width:1024px) {
+    .heading-1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .heading-1 {
+        font-size: 4rem;
+    }
+}
+.heading-2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.desc {
+    font-size: 1.125rem;
+}
+ 
+
+.btns-group {
+    margin-top: 1rem;
+}
+
+/* Sample button based on ButtonA */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 0.25em 1.5em;
+    min-height: 3rem;
+    color: var(--btn-fg-color);
+    background-color: var(--btn-bg-color);
+}
+
+.button.active,
+.button:active,
+.button:focus,
+.button:hover {
+    color: var(--btn-fg-color);
+    text-decoration: none;
+    filter: brightness(90%);
+}
+
+
+/* Sample variant or modification */
+.variant-style-a.section {
+    --bg-color: #f10c34;
+    --fg-color: #FFFFFF;
+    --btn-fg-color: #f10c34;
+    --btn-bg-color: #FFFFFF;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.variant-style-a .part-image{
+    order: 2;
+}
+.variant-style-a .part-content{
+    order: 1;
+}
+ 
+/* style-b or modification */
+.variant-style-b.section {
+    --bg-color: #000000;
+    --fg-color: #FFFFFF;
+    --btn-fg-color: #303030;
+    --btn-bg-color: #FFFFFF;
+    --content-bg-color: rgba(0,0,0,0.5);
+    align-items: flex-end;
+    justify-content: flex-start;
+}

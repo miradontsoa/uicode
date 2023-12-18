@@ -1,0 +1,52 @@
+.categories{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+.category{
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    /* margin-right: 0.5rem; */
+    border-radius: 0.5rem;
+    background-color: rgba(var(--fg-color-rgb), 0.1);
+    color: rgba(var(--fg-color-rgb), 0.5);
+}
+
+.title{
+    font-size: 2rem;
+    line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .title{
+        font-size: 3.5rem;
+    }
+}
+.date{
+    margin-top: 0.5rem;
+} 
+
+.author{
+    /* margin-top: 0.5rem; */
+}
+.hero .date p,
+.hero .author p{
+    margin: 0;
+    font-size:1rem;
+    color: rgba(var(--fg-color-rgb), 0.7);
+}
+
+.coverImage{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 0.8rem;
+}
+.share{
+    margin-top: 0.5rem;
+}

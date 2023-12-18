@@ -1,0 +1,51 @@
+:root {
+  --white: #d3d3d3;
+  --white-rgb: 255, 255, 255;
+  // --white-primary: #f2f2fb;
+  --white-primary: #f8f9fa;
+  --white-primary-rgb: 248, 250, 251;
+  --black: rgb(22, 22, 22);
+  --black-rgb: 47, 48, 57;
+  // --black-primary: #1b1b20;
+  --black-primary: #1e1c2d;
+
+  --gray: var(--gray-600);
+  --gray-rgb: var(--gray-600-rgb);
+  --gray-light: var(--gray-200);
+  --gray-medium: var(--gray-500);
+  --gray-dark: var(--gray-700);
+  --gray-primary: var(--gray-400);
+ 
+  
+  // --primary: #556ff6;
+  // --primary-darker: #4c16df;
+  --primary: #556ff6;
+  --primary-darker: #4c16df;
+  --primary-rgb: 85, 111, 246;
+
+  --secondary: #4db6ac;
+  --secondary-rgb: 77, 182, 172;
+  --success: var(--green);
+  --success-rgb: var(--green-rgb);
+  --info: var(--cyan);
+  --info-rgb: var(--cyan-rgb);
+  --warning: var(--yellow);
+  --warning-rgb: var(--yellow-rgb);
+  --danger: var(--red);
+  --danger-rgb: var(--red-rgb);
+  --light: var(--gray-100);
+  --light-rgb: var(--gray-100-rgb);
+  --dark: var(--black);
+  --dark-rgb: var(--black-rgb);
+
+  /* dark/light theme color */
+  --fg-color: var(--white);
+  --fg-color-rgb: var(--white-rgb);
+  --bg-color: var(--black);
+  --bg-color-rgb: var(--black-rgb);
+  --fg-color-primary: var(--white-primary);
+  --bg-color-primary: var(--black-primary);
+
+  --border-color: #48484b;
+ 
+}

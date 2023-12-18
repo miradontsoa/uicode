@@ -1,0 +1,6 @@
+.icon {
+    --width: 2.5rem;
+    width: var(--width);
+    height: var(--width);
+    color: currentColor;
+}

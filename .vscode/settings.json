@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".next": true,
+    ".yarn": true
+  },
+  "typescript.tsdk": "node_modules\\.pnpm\\typescript@4.9.4\\node_modules\\typescript\\lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "lemonsqueezy"
+  ],
+  "files.autoSaveDelay": 5000,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}

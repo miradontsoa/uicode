@@ -1,0 +1,244 @@
+/* Main wrapper */
+.wrapper {
+  --fg-color: rgb(56, 56, 56);
+  --bg-color: white;
+  --title-font-size: 1rem;
+  --text-font-size: 0.875rem;
+  --padding: 0.5rem;
+  --border-radius: 1rem;
+  --image-border-radius: 0.5rem;
+  --image-width: 5rem;
+  --button-fg-color: rgb(255, 255, 255);
+  --button-bg-color: rgb(56, 56, 56);
+  --button-hover-bg-color: rgb(88, 88, 88);
+  width: 100%;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+  gap: 1rem;
+  flex-direction: row;
+}
+
+/* Image wrapper */
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: var(--image-width);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--image-border-radius);
+}
+
+.image.square {
+  aspect-ratio: 1;
+}
+
+/* Url and link */
+.link {
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--fg-color);
+  text-decoration: none;
+}
+
+/* Body */
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* content elements */
+.content {
+  margin-bottom: 0rem;
+}
+
+.title-line {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.t-left {
+  flex-grow: 1;
+}
+
+.t-right {
+  flex-grow: 0;
+}
+
+/* Footer elements */
+.footer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+
+.f-left {
+  flex-grow: 1;
+}
+
+.f-right {
+  flex-grow: 0;
+}
+
+.footer-secondary {
+  margin-top: 0.25rem;
+}
+
+/* Content */
+.category {
+  font-size: var(--title-font-size);
+  margin-bottom: 0rem;
+  opacity: 0.7;
+  line-height: 1.2;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.desc {
+  margin-bottom: 0rem;
+  font-size: var(--text-font-size);
+}
+
+.price {
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  margin-bottom: 0rem;
+}
+
+.category {
+  font-size: var(--text-font-size);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Buttons, tags  */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  font-size: var(--text-font-size);
+}
+
+.favorite {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+.favorite-btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 0;
+  line-height: 1;
+  background-color: transparent;
+}
+
+.favorite-btn:hover {
+  border: none;
+  outline: none;
+}
+
+.favorite-icon {
+  font-size: 1rem;
+  line-height: 0;
+}
+.favorite-icon > *{
+  font-size: inherit;
+}
+.favorite-text{
+  line-height: 1;
+}
+/* Button group, footer button */
+.btns-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-text {
+  display: inline-flex;
+  border: none;
+  outline: none;
+  color: var(--button-fg-color);
+  background-color: var(--button-bg-color);
+  border-radius: 1rem;
+  padding: 0rem 0.75rem;
+  font-size: 0.875rem;
+  min-height: 1.25rem;
+}
+
+.btn-text:hover {
+  color: var(--button-fg-color);
+  background-color: var(--button-hover-bg-color);
+}
+/* Item count */
+.count-controls{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.count-number{
+  min-width: 1rem;
+  text-align: center;
+  font-size: var(--text-font-size);
+}
+.count-btn , .remove-btn{
+  display: inline-flex;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.remove-btn {
+  border-radius: 50%;
+  color: var(--button-fg-color);
+  background-color: var(--button-bg-color);
+  border-color: var(--button-bg-color);
+}
+
+/* Customized color */
+.variant-simple {
+  --padding: 0px;
+  --bg-color: transparent;
+  --image-border-radius: 1rem;
+  box-shadow: none;
+}
+.variant-simple:hover .image{
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://usereactjs.com/</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/support</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/sign-in</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/go-premium</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button-group</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/breadcrumbs</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/badge</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/input</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/loading</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/progress-bar</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/switch-checkbox</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-bar</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-bar</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/tabs</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sidebar</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-screen</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/menu-icon</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/list-item</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/pricing</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-screen-ecommerce</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/account-profile</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/avatar</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/team-people</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/stats</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/location</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/real-estate</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/frame</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/widget</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-frame</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-text</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/search-field</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/subscription-form</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sign-in-form</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/settings/license</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-e</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-f</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-text-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-text-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-text-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button/button-text-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button-group/button-group-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/button-group/button-group-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/breadcrumbs/breadcrumbs-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/breadcrumbs/breadcrumbs-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/badge/badge-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-color-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-color-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-color-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-text-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-text-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/category-select/category-text-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/input/input-container-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/input/input-container-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/loading/loading-bounce-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/loading/loading-spinner-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/progress-bar/progress-bar-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/switch-checkbox/checkbox-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/switch-checkbox/switch-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-bar/header-bar-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-bar/header-bar-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-bar/header-bar-mobile-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-bar/navigation-bar-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-bar/navigation-bar-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-bar/navigation-bar-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-bar/navigation-bar-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/tabs/tabs-radixui-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/tabs/tabs-radixui-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/tabs/tabs-radixui-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sidebar/sidebar-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sidebar/sidebar-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sidebar/sidebar-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-screen/nav-screen-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/menu-icon/menu-icon-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/menu-icon/menu-icon-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/menu-icon/menu-icon-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-e</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-f</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/grid-item/card-g</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/list-item/list-item-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/list-item/list-item-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/list-item/list-item-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-card-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-e</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/product-item/product-item-f</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/pricing/pricing-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/pricing/pricing-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/pricing/pricing-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/pricing/pricing-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce/header-ecommerce-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce/header-ecommerce-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce/header-ecommerce-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce/header-ecommerce-mobile-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/header-ecommerce/header-ecommerce-mobile-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/navigation-screen-ecommerce/nav-screen-ecommerce-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item/feature-item-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item/feature-item-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item/feature-item-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item/feature-item-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/feature-item/feature-item-e</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/account-profile/account-profile-lite-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/account-profile/account-profile-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/account-profile/account-profile-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/avatar/avatar-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/avatar/avatar-group-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/avatar/avatar-group-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/team-people/team-member-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/team-people/team-member-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/team-people/team-member-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/stats/stats-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/stats/stats-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/stats/stats-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/location/location-item-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/location/location-item-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/real-estate/real-estate-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/real-estate/real-estate-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/real-estate/real-estate-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/real-estate/real-estate-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/frame/card-frame-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/frame/glass-frame-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/frame/glass-frame-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/frame/glass-frame-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/widget/widget-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame/icon-frame-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame/icon-frame-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame/icon-frame-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame/icon-frame-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/icon-frame/icon-frame-e</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-frame/image-frame-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-frame/image-frame-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-frame/image-frame-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-frame/image-frame-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-text/image-text-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-text/image-text-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-text/image-text-c</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/image-text/image-text-d</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/search-field/search-field-lite-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/search-field/search-field-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/search-field/search-field-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/subscription-form/subscription-form-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/subscription-form/subscription-form-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sign-in-form/sign-in-form-a</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://usereactjs.com/components/sign-in-form/sign-in-form-b</loc>
+  <lastmod>2023-08-14T06:25:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

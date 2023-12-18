@@ -1,0 +1,126 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #303030;
+    --bg-color: #e7e7e7;
+    --bg-gradient-stop-1: #e7e7e7;
+    --bg-gradient-stop-2: #d3d3d3;
+    --size: 4rem;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-radius: 0.5rem;
+    --border-size: 1px;
+    --border-color: #cfcfcf;
+    font-size: 1.5rem;
+    min-width: var(--size);
+    min-height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg-color);
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--border-color);
+    background: var(--bg-color);
+    background-image: linear-gradient(to bottom right, var(--bg-gradient-stop-1), var(--bg-gradient-stop-2));
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: 0.2s;
+    position: relative;
+}
+
+
+/* Size */
+.s-small {
+    --size: 3rem;
+}
+
+.s-medium {
+    --size: 4rem;
+}
+
+.s-large {
+    --size: 5rem;
+}
+
+/* Border Size */
+.bs-none {
+    --border-size: 0px;
+}
+
+.bs-small {
+    --border-size: 1px;
+}
+
+.bs-medium {
+    --border-size: 2px;
+}
+
+.bs-large {
+    --border-size: 4px;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}
+
+.r-full {
+    --border-radius: 10rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+}
+
+.ha-shadow {
+    transition: 0.2s;
+}
+
+.ha-shadow:hover,
+.ha-shadow:focus,
+.ha-shadow:active {
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+    --shadow-blur: 3px;
+}
+
+/* sample customization */
+
+/* variant="blue" */
+.variant-blue {
+    --fg-color: #FFFFFF;
+    --bg-color: #567FEF;
+    --bg-gradient-stop-1: #567FEF;
+    --bg-gradient-stop-2: #50D5FF;
+    --border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* variant="blue-light" */
+.variant-blue-light {
+    --fg-color: #567FEF;
+    --bg-color: #EBF0FF;
+    --bg-gradient-stop-1: #EBF0FF;
+    --bg-gradient-stop-2: #b9cbfc;
+    --border-color: rgba(86, 127, 239, 0.5);
+}

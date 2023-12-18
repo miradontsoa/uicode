@@ -1,0 +1,77 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: currentColor;
+    --bg-color: #ffffff;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-radius: 0.5rem;
+    color: var(--fg-color);
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    position: relative;
+}
+.of-hidden{
+    overflow: hidden;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+}
+
+.ha-shadow {
+    transition: 0.2s;
+}
+
+.ha-shadow:hover,
+.ha-shadow:focus,
+.ha-shadow:active {
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+}
+
+/* sample customization */
+/* variant="flat" */
+.variant-flat {
+    --shadow-x: 0.5rem;
+    --shadow-y: 0.5rem;
+    --shadow-blur: 0px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(71, 73, 74, 0.5);
+}
+
+/* variant="blue" */
+.variant-blue {
+    --fg-color: #ffffff;
+    background-image: linear-gradient(to top right, #28daf0, #a8adf5);
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color), inset 2px 2px 2px rgba(255, 255, 255, 0.2), inset -2px -2px 2px rgba(0, 0, 0, 0.2);
+}

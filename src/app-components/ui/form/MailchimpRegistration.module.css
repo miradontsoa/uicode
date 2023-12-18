@@ -1,0 +1,52 @@
+.formBox {
+  /* background-color: rgba(var(--fg-color-rgb), 0.1); */
+  background-color: rgba(0, 60, 255, 0.05);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.brandingLogo{
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+  margin: 0;
+  /* height: 0px;
+  overflow: hidden; */
+}
+.brandingLogo a{
+  
+  font-size: 0.75rem;
+  color: currentColor;
+
+}
+.indicatesRequired{
+  display: none;
+}
+.title{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.label{
+  font-size: 0.875rem;
+}
+.input{
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(var(--fg-color-rgb), 0.25);
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.submit{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  min-height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--bg-color);
+  background-color: rgba(var(--fg-color-rgb), 1);
+}
+.hiddenField{
+  position: absolute;
+  left: -5000px;
+}

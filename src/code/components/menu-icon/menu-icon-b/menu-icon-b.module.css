@@ -1,0 +1,59 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: currentColor;
+    --icon-size: 1em;
+    --bar-size: 1em;
+    --bar-height: 0.125em;
+    --bar-radius: 0.5em;
+    --bar-gap: 0.125em;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar1,
+.bar2{
+    display: block;
+    width: var(--bar-size);
+    height: var(--bar-height);
+    border-radius: var(--bar-radius);
+    background-color: var(--fg-color);
+    margin-bottom: var(--bar-gap);
+    transition: 0.3s;
+    transform-origin: center;
+}
+
+.bar2 {
+    margin-bottom: 0;
+}
+ 
+.open .bar1 {
+    transform: translateY(calc(0.5 * (var(--bar-gap) + var(--bar-height)))) rotate(45deg);
+}
+.open .bar2 {
+    transform: translateY(calc(-0.5 * (var(--bar-gap) + var(--bar-height)))) rotate(-45deg);
+}
+
+/* Alternative colors, size and variants */
+.c-style-a{
+    font-size: 1.5rem;
+    --bar-height: 2px;
+    --bar-gap: 6px;
+    --fg-color: #567FEF;
+}
+.c-style-b{
+    font-size: 1.5rem;
+    --bar-height: 4px;
+    --bar-gap: 4px;
+    --fg-color: #567FEF;
+}

@@ -1,0 +1,91 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: currentColor;
+    --bg-color: rgba(255, 255, 255, 0.5);
+    --glass-blur: 4px;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --border-radius: 0.5rem;
+    --border-size: 0.5rem;
+    --border-outline-color: rgba(255, 255, 255, 0.25);
+    --border-outline-size: 1px;
+    color: var(--fg-color);
+    position: relative;
+    border-radius: var(--border-radius);
+    border: var(--border-outline-size) solid var(--border-outline-color);
+}
+
+.of-hidden {
+    overflow: hidden;
+}
+
+.glass-wrapper {
+    background-color: var(--bg-color);
+    background-clip: content-box;
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+    border: var(--border-size) solid var(--border-color);
+    backdrop-filter: blur(var(--glass-blur));
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+}
+
+.ha-shadow {
+    transition: 0.2s;
+}
+
+.ha-shadow:hover,
+.ha-shadow:focus,
+.ha-shadow:active {
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+}
+
+/* sample customization */
+/* variant="dark" */
+.variant-dark {
+    --bg-color: rgba(0, 0, 0, 0.2);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --border-outline-color: rgba(0, 0, 0, 0.175);
+}
+
+/* variant="flat" */
+.variant-flat {
+    --shadow-x: 0.5rem;
+    --shadow-y: 0.5rem;
+    --shadow-blur: 0px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(255, 255, 255, 0.8);
+}

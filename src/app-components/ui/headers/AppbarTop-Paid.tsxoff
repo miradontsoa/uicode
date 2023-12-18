@@ -1,0 +1,167 @@
+"use client";
+
+import { AppContext } from "@/contexts/AppContext";
+import { useUser } from "@/hooks/authenticationHooks";
+import { MenuItem } from "@/types";
+import { CodeBracketIcon } from "@heroicons/react/24/solid";
+import React from "react";
+import NavbarTop from "./NavbarTop";
+
+export default function AppbarTop({}) {
+  const mainContext = React.useContext(AppContext);
+  const user = useUser();
+
+  const menuItems: MenuItem[] = (
+    [
+      {
+        title: "About",
+        href: "/",
+        slug: "about",
+        // active: true,
+      },
+      {
+        title: "Components",
+        mobileTitle: "Explore Components",
+        href: "/components",
+        slug: "components",
+        mobileColor: "blue-cta",
+        icon: <CodeBracketIcon className="w-7"/>,
+      },
+      /* {
+        title: "React list",
+        href: "/list",
+        slug: "list",
+        // visibleForDevice: "mobile-only",
+      }, */
+      {
+        title: "Separator-a",
+        slug: "separator-a",
+        appearance: "separator"
+        // visibleForDevice: "mobile-only",
+      },
+      {
+        title: "Support",
+        href: "/support",
+        slug: "support",
+        // visibleForDevice: "mobile-only",
+      },
+      // MVP v2: remove sign in or premium
+      /* {
+        title: "Settings",
+        href: "/settings",
+        slug: "settings",
+        visibleForAccount: "registered",
+        visibleForDevice: "mobile-only",
+      },
+      {
+        title: "Sign out",
+        slug: "sign-out",
+        visibleForAccount: "registered",
+        visibleForDevice: "mobile-only",
+        element: (
+          <Link href={"/logout"}>
+            <ButtonApp type="link" height="large" variant="outline">
+              Log out
+            </ButtonApp>
+          </Link>
+        ),
+      },
+      {
+        title: "Sign in",
+        slug: "sign-in",
+        visibleForAccount: "non-registered",
+        mobileHalf: true,
+        element: (
+          <Link href={"/sign-in"}>
+            <ButtonApp
+              type="link"
+              height="large"
+              variant="outline"
+              className="w-full lg:w-fit"
+            >
+              Sign In
+            </ButtonApp>
+          </Link>
+        ),
+      },
+      {
+        title: "Go Premium",
+        slug: "go-premium",
+        visibleForAccount: "non-registered",
+        mobileHalf: true,
+        element: (
+          <Link href={"/go-premium"}>
+            <ButtonApp type="link" height="large" className="w-full lg:w-fit">
+              Go Premium
+            </ButtonApp>
+          </Link>
+        ),
+      }, */
+
+
+
+
+      /* {
+        title: "Settings",
+        href: "/settings",
+        slug: "settings",
+        visibleForAccount: "registered",
+      }, */
+      /* {
+      title: "Pages",
+      href: "/pages",
+      slug: "pages",
+    },
+    {
+      title: "Sections",
+      href: "/sections",
+      slug: "sections",
+    }, */
+      /* {
+      title: "React Jobs",
+      href: "/job-board",
+      slug: "job-board",
+    },
+    {
+      title: "Blog",
+      href: "/blog",
+      slug: "blog",
+    }, */
+      /* {
+      title: "Full version",
+      href: "/full-version",
+      slug: "full-version",
+      appearance: "cta",
+    }, */
+    ] as MenuItem[]
+  ).filter((item) => {
+    if (item.visibleForAccount === "non-registered" && !user?.accountType) {
+      return true;
+    }
+    if (!item.visibleForAccount || item.visibleForAccount === "any") {
+      return true;
+    }
+    if (
+      item.visibleForAccount === "registered" &&
+      (user?.accountType === "registered" || user?.accountType === "premium")
+    ) {
+      return true;
+    }
+    return false;
+  });
+  return (
+    <div className={"appbar-top"}>
+      <div className="appbar-container">
+        <h1 aria-hidden="true" className="visually-hidden">
+          useReactjs, React UI components, tips, pages
+        </h1>
+        <nav className="navbar">
+          <NavbarTop menuItems={menuItems} />
+          {/* <NavbarMobile menuItems={menuItems} /> */}
+          {/* <NavbarLargeScreen menuItems={menuItems} /> */}
+          {/* <VerifySession/> */}
+        </nav>
+      </div>
+    </div>
+  );
+}

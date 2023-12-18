@@ -1,0 +1,53 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #464646;
+    --border-color: #ffffff;
+    --border-size: 2px;
+    --gap: -1.5rem;
+    color: var(--fg-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatars {
+    display: flex;
+    align-items: flex-start;
+}
+.avatar-margin{
+    display: block;
+    height: 1rem;
+}
+.avatar-1{
+    margin-top: calc(-1 * var(--gap));
+}
+
+.avatar-2{
+    margin-left: calc(var(--gap));
+}
+
+/* To left direction */
+.avatars.d-to-left {
+    flex-direction: row-reverse;
+}
+.avatars.d-to-left .avatar-1{
+    margin-left: calc(var(--gap));
+}
+.avatars.d-to-left .avatar-2{
+    margin-left: 0;
+}
+
+.content{
+    margin-left: 0.25rem;
+}
+
+/* size */
+.s-small{
+    --gap: -1rem;
+}
+.s-medium{
+    --gap: -1.5rem;
+}
+.s-large{
+    --gap: -3rem;
+}

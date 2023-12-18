@@ -1,0 +1,115 @@
+.wrapper {
+    --fg-color: #303030;
+    --font-size: 1rem;
+    --line-height: 1.2;
+    --gap-x: 0.5rem;
+    --gap-y: 0.5rem;
+    --icon-gap: 0.5rem;
+    --icon-color: #567FEF;
+    --border-radius: 1rem;
+    --active-item-fg-color: currentColor;
+    --active-item-weight: 600;
+    --separator-size: 1rem;
+    --separator-color: #567FEF;
+    --hover-fg-color: #567FEF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--gap-x);
+    color: var(--fg-color);
+    font-size: var(--font-size);
+}
+
+.item-separator {
+    font-size: var(--separator-size);
+    color: var(--separator-color);
+    margin-left: calc(0.5 * var(--gap-x));
+    margin-right: calc(0.5 * var(--gap-x));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--gap-y);
+}
+
+.list-item {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.item-content {
+    transition: 0.3s;
+}
+
+
+.item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--icon-gap);
+    position: relative;
+    line-height: var(--line-height);
+    z-index: 0;
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: var(--icon-color);
+}
+
+.link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* hover */
+.link:hover {
+    color: var(--hover-fg-color)
+}
+
+/* highlight last item  */
+.highlight-last-item .list-item:last-child .item-content {
+    color: var(--active-item-fg-color);
+    font-weight: var(--active-item-weight);
+}
+
+/* active item  */
+.list-item.active .item-content {
+    color: var(--active-item-fg-color);
+    font-weight: var(--active-item-weight);
+}
+
+/* Size */
+.s-small {
+    --font-size: 0.75rem;
+    --gap-x: 0.125rem;
+}
+
+.s-medium {
+    --font-size: 1em;
+    --gap-x: 0.5em;
+}
+
+.s-large {
+    --font-size: 1.25rem;
+    --gap-x: 0.5rem;
+}
+
+/* sample customization */
+
+/* variant="blue" */
+.variant-blue {
+    --fg-color: #567FEF;
+    --separator-color: #303030;
+    --hover-fg-color: rgba(86, 127, 239, 0.5);
+}

@@ -1,0 +1,79 @@
+.wrapper {
+    --outline-width: 2px;
+    --outline-color: rgba(75, 75, 75, 0.5);
+    --active-icon-color: rgb(255, 255, 255);
+    --border-radius: 16px;
+    --icon-width: 1rem;
+    display: flex;
+    gap: calc(var(--icon-width) / 2);
+}
+
+.color-icon {
+    all: unset;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: var(--border-radius);
+    width: var(--icon-width);
+    height: var(--icon-width);
+    font-size: var(--icon-width);
+    box-shadow: 0px 0px 0px 1px var(--outline-color);
+}
+
+.color-icon:active,
+.color-icon:hover,
+.color-icon:focus {
+    outline: none;
+}
+
+
+.active-icon {
+    position: relative;
+    font-size: 0.65em;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 0.5px black) drop-shadow(0px 0px 0.25px black);
+}
+
+/* Icon border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.375rem;
+}
+
+.r-large {
+    --border-radius: 0.5rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+
+/* Size */
+.s-small {
+    --icon-width: 0.875rem;
+}
+
+.s-medium {
+    --icon-width: 1rem;
+}
+
+.s-large {
+    --icon-width: 1.25rem;
+}

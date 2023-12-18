@@ -1,0 +1,178 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: white;
+    --fg-color: #4d4d4d;
+    --gap: 3rem;
+    --shadow-offset: 4px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    /* Modify this to change image and content width*/
+}
+
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: max(50%, 240px);
+    height: 100%;
+    z-index: 1;
+}
+
+.align-center .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.align-bottom .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Aspect ration */
+.ar-landscape {
+    aspect-ratio: 16/9;
+}
+
+.ar-square {
+    aspect-ratio: 1;
+}
+
+.ar-portrait {
+    aspect-ratio: 3/4;
+}
+
+
+
+/* Image */
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Icon */
+.icon {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.icon-secondary {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.175;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.align-bottom .icon-secondary {
+    top: 0;
+    bottom: auto;
+}
+
+/* Text content */
+.link {
+    color: currentColor;
+}
+
+.link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.link:hover .wrapper {
+    --shadow-offset: 0px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    opacity: 0.5;
+}
+
+.desc {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.5rem;
+}
+
+.r-medium {
+    border-radius: 1rem;
+}
+
+.r-large {
+    border-radius: 1.5rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 4px -1px var(--shadow-color);
+}
+
+
+/* sample customization */
+
+/* variant="white" */
+.variant-white {
+    --fg-color: rgba(255, 255, 255, 0.6);
+}
+
+.variant-white .title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* variant="blue" */
+.variant-blue {
+    --bg-color: rgb(168, 137, 255);
+    --fg-color: rgba(255, 255, 255, 0.507);
+    background-image: linear-gradient(to bottom right, #2a7fff, #9d0df0);
+}
+
+.variant-blue .title {
+    color: #ffffff;
+}
+
+/* variant="yellow-dark" */
+.variant-yellow-dark {
+    --fg-color: #8a6300;
+}

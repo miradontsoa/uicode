@@ -1,0 +1,170 @@
+/* Main wrapper */
+.wrapper {
+    --on-checkmark-color: #ffffff;
+    --off-checkmark-color: #ffffff;
+    --on-bg-color: #567FEF;
+    --off-bg-color: #ffffff;
+    --width: 1.5rem;
+    --height: 1.5rem;
+    --border-radius: 0.5rem;
+    --checkmark-width: 1rem;
+    --padding: calc(0.5 * (var(--height) - var(--checkmark-width)));
+    --gap: 0.5rem;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    border: none;
+    padding: var(--border-padding);
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: 0.2s;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.input-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    position: relative;
+}
+
+.before-element {}
+
+.input-checkbox {
+    /* Visually hidden; */
+    width: var(--width);
+    height: var(--width);
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.checkmark {
+    display: inline-block;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    z-index: 0;
+}
+
+.checkmark:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+    z-index: -1;
+    background-color: var(--off-bg-color);
+    box-shadow: inset 0px 0px 0px 1px rgba(136, 136, 136, 0.5);
+}
+
+.checkmark-icon {
+    position: absolute;
+    height: var(--checkmark-width);
+    width: var(--checkmark-width);
+    left: var(--padding);
+    top: var(--padding);
+    color: var(--on-checkmark-color);
+    transition: 0.3s;
+    opacity: 0;
+    z-index: 0;
+}
+
+.input-checkbox:checked+.checkmark:before {
+    background-color: var(--on-bg-color);
+    box-shadow: none;
+}
+
+.input-checkbox:checked+.checkmark .checkmark-icon {
+    opacity: 1;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.5rem;
+}
+
+.r-large {
+    --border-radius: 0.75rem;
+}
+
+.r-full {
+    --border-radius: 10rem;
+}
+
+
+/* sample customization */
+
+/* variant="gradient-border" */
+.variant-green {
+    --on-bg-color: #00d85b;
+}
+
+.variant-ios {
+    --width: 1.125rem;
+    --height: 1.125rem;
+    --border-radius: 0.25rem;
+    --checkmark-width: 0.75rem;
+    --on-bg-color: #0080FF;
+    --off-bg-color: #ffffff;
+}
+
+.variant-ios .checkmark:before {
+    box-shadow: 0px 1px 4px rgba(57, 57, 57, 0.2), inset 0px 1px 4px rgba(57, 57, 57, 0.2), inset 0px 1px 2px rgba(57, 57, 57, 0.25);
+}
+
+.variant-ios .input-checkbox:checked+.checkmark:before {
+    box-shadow: 0px 1px 8px rgba(0, 128, 255, 0.5);
+}
+
+.variant-m3 {
+    --border-width: 2px;
+    --width: 1.125rem;
+    --height: 1.125rem;
+    --border-radius: 0.25rem;
+    --checkmark-width: 0.75rem;
+    --on-bg-color: #c1b6e2;
+    --off-bg-color: #636272;
+    --on-checkmark-color: #5d36f8;
+    --off-checkmark-color: #c1b6e2;
+}
+
+.variant-m3 .input-checkbox-wrapper {
+    height: 40px;
+    width: 40px;
+    border-radius: 10rem;
+    transition: 0.3s;
+}
+
+.variant-m3:hover .input-checkbox-wrapper {
+    background-color: rgba(93, 54, 248, 0.1);
+}
+
+.variant-m3 .checkmark:before {
+    box-shadow: none;
+    border: var(--border-width) solid var(--off-checkmark-color);
+}
+
+
+.variant-m3 .input-checkbox:checked+.checkmark:before {
+    background-color: var(--on-bg-color);
+}

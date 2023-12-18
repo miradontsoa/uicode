@@ -1,0 +1,92 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #ffffff;
+    --border-radius: 1rem;
+    --padding: 1.5rem;
+    width: 100%;
+    position: relative;
+}
+
+/* Image wrapper */
+.image-wrapper {
+    position: relative;
+    z-index: 0;
+}
+
+.image {
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+}
+
+
+/* text content layout */
+.text-content {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    padding: var(--padding);
+    color: var(--fg-color);
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+}
+.text-wrapper{
+    width: 100%;
+}
+.text-wrapper p {
+    line-height: 1.5;
+}
+.text-wrapper > *:last-child {
+    margin-bottom: 0;
+}
+
+/* Alignment */
+/* Vertical alignment */
+.tv-start .text-content{
+    align-items: flex-start;
+}
+.tv-center .text-content{
+    align-items: center;
+}
+.tv-end .text-content{
+    align-items: flex-end;
+}
+
+/* Horizontal alignment */
+.th-start .text-content{
+    text-align: left;
+}
+.th-end .text-content{
+    text-align: right;
+}
+.th-center .text-content{
+    text-align: center;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+/* Customized color */
+.variant-dark{
+    --fg-color: #424242;
+}

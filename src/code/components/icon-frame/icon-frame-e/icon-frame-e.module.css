@@ -1,0 +1,155 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #303030;
+    --bg-color: #ffffff;
+    --color-gradient: linear-gradient(to bottom right, #ffd92f, #ff2f52);
+    --bg-gradient-stop-1: #e7e7e7;
+    --bg-gradient-stop-2: #d3d3d3;
+    --size: 4rem;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-radius: 0.5rem;
+    --border-size: 4px;
+    --border-color: #303030;
+    --border-padding: 4px;
+    font-size: 1.5rem;
+    min-width: var(--size);
+    min-height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--fg-color);
+    border-radius: var(--border-radius);
+    border: none;
+    padding: var(--border-padding);
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: 0.2s;
+    position: relative;
+    background: var(--bg-color);
+}
+
+.gap {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: calc(var(--border-radius) - ((var(--border-padding))));
+    padding: var(--border-size);
+    background: var(--border-color);
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(var(--border-radius) - ((var(--border-size) + var(--border-padding))));
+    background: var(--bg-color);
+}
+
+
+/* Size */
+.s-small {
+    --size: 3rem;
+}
+
+.s-medium {
+    --size: 4rem;
+}
+
+.s-large {
+    --size: 5rem;
+}
+
+/* Border Size */
+.bs-none {
+    --border-size: 0px;
+}
+
+.bs-small {
+    --border-size: 2px;
+}
+
+.bs-medium {
+    --border-size: 4px;
+}
+
+.bs-large {
+    --border-size: 6px;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}
+
+.r-full {
+    --border-radius: 10rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+}
+
+.ha-shadow {
+    transition: 0.2s;
+}
+
+.ha-shadow:hover,
+.ha-shadow:focus,
+.ha-shadow:active {
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+    --shadow-blur: 3px;
+}
+
+/* sample customization */
+
+/* variant="gradient-border" */
+.variant-gradient-border {
+    --gradient: linear-gradient(to bottom right, #EF5684, #567FEF);
+    --border-color: var(--gradient);
+    --fg-color: #ff236c;
+    --bg-color: #FFFFFF;
+}
+
+/* variant="gradient-border-dark" */
+.variant-gradient-border-dark {
+    --gradient: linear-gradient(to bottom right, #EF5684, #567FEF);
+    --border-color: var(--gradient);
+    --fg-color: #ffffff;
+    --bg-color: #303030;
+    background: linear-gradient(to bottom right, #636363, #303030);
+}
+.variant-gradient-border-dark .content{
+    background: linear-gradient(to bottom right, #636363, #303030);
+}

@@ -1,0 +1,12 @@
+.wrapper {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: rgb(243, 243, 243);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}

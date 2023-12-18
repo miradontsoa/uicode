@@ -1,0 +1,213 @@
+/* Main wrapper */
+.wrapper {
+    --bg-color: white;
+    --fg-color: #4d4d4d;
+    --gap: 3rem;
+    --shadow-offset: 4px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+    position: relative;
+    /* arrange items horizontally horizontally  on mobile devices */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
+}
+
+/* responsiveness, arrange items vertically horizontally on large screen devices */
+@media screen and (min-width: 768px) {
+    /* on medium and large devices */
+    .wrapper {
+        display: grid;
+        /* Modify this to change image and content width*/
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.align-center .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.align-bottom .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Image */
+.image-wrapper {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.img-ar-square {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.img-ar-portrait {
+    width: 100%;
+    aspect-ratio: 3/4;
+}
+
+/* Image border radius */
+.img-r-none {
+    border-radius: 0;
+}
+
+.img-r-small {
+    border-radius: 0.5rem;
+}
+
+.img-r-medium {
+    border-radius: 1rem;
+}
+
+.img-r-large {
+    border-radius: 1.5rem;
+}
+
+.img-r-full {
+    border-radius: 5rem;
+}
+
+/* Icon */
+.icon {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.icon-secondary {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.175;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.align-bottom .icon-secondary {
+    top: 0;
+    bottom: auto;
+}
+
+/* Text content */
+.link {
+    color: currentColor;
+}
+
+.link:hover {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.link:hover .wrapper {
+    --shadow-offset: 0px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.sub-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    opacity: 0.5;
+}
+
+.desc {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Border radius */
+.r-none {
+    border-radius: 0;
+}
+
+.r-small {
+    border-radius: 0.5rem;
+}
+
+.r-medium {
+    border-radius: 1rem;
+}
+
+.r-large {
+    border-radius: 1.5rem;
+}
+
+.r-full {
+    border-radius: 5rem;
+}
+
+/* shadow */
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 4px -1px var(--shadow-color);
+}
+
+
+/* sample customization */
+
+/* variant="blue" */
+.variant-blue {
+    --bg-color: #632aff;
+    --fg-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+}
+
+.variant-blue .title {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* variant="blue-white" */
+.variant-blue-white {
+    --bg-color: #FFFFFF;
+    --fg-color: #632aff;
+    padding: 2rem;
+}
+
+.variant-blue-simple .desc {
+    color: #4d4d4d;
+}
+
+/* variant="blue-simple" */
+.variant-blue-simple {
+    --bg-color: transparent;
+    --fg-color: #632aff;
+    box-shadow: none;
+    padding: 0;
+}
+
+.variant-blue-simple .desc {
+    color: #4d4d4d;
+}
+
+/* variant="simple" */
+.variant-simple {
+    --bg-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}

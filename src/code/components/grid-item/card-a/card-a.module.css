@@ -1,0 +1,139 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: rgb(56, 56, 56);
+    --bg-color: white;
+    --border-radius: 1rem;
+    --padding: 0.5rem;
+    --body-margin-y: 1rem;
+    --body-margin-x: 0.5rem;
+    --action-icon-color: #ffffff;
+    --action-icon-size: 2rem;
+    width: 100%;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1),
+        0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Image wrapper */
+.image-wrapper {
+    overflow: hidden;
+    border-radius: calc(var(--border-radius) - var(--padding)/2);
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image.square {
+    aspect-ratio: 1;
+}
+
+.image-controls {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.action-icon {
+    padding: 0;
+    border: none;
+    outline: none;
+    width: var(--action-icon-size);
+    height: var(--action-icon-size);
+    font-size: var(--action-icon-size);
+    color: var(--action-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.2));
+}
+
+.action-icon:hover,
+.action-icon:active,
+.action-icon:focus {
+    border: none;
+    outline: none;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+/* Body */
+.body {
+    padding: var(--body-margin-y) var(--body-margin-x);
+    padding-bottom: calc(var(--body-margin-y) - var(--padding));
+    color: var(--fg-color);
+}
+
+.body>a,
+.body .body-link {
+    color: currentColor;
+}
+
+.body>a:hover,
+.body .body-link:hover {
+    text-decoration: none;
+}
+
+
+/* body content layout */
+.body-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.b-left {
+    flex-grow: 1;
+}
+
+.b-right {
+    flex-grow: 0;
+}
+
+/* Title text */
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.desc p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.view-icon {
+    min-width: 2rem;
+    min-height: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 2rem;
+}
+
+/* Customized color */
+.variant-dark{
+    --fg-color: #ffffff;
+    --bg-color: #424242;
+}

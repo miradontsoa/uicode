@@ -1,0 +1,169 @@
+.wrapper {
+    --fg-color: #303030;
+    --bg-color: #D9D9D9;
+    --before-after-bg-color: rgba(255, 255, 255, 0.1);
+    --close-bg-color: rgba(48, 48, 48, 0.25);
+    --font-size: 0.875rem;
+    --height: 1.5rem;
+    --padding: 0.125rem;
+    --gap: 0.25rem;
+    --border-size: 0px;
+    --border-color: transparent;
+    --border-radius: 1rem;
+    --close-icon-height: 1rem;
+    --close-icon-margin: 0.1875rem;
+    /* --close-icon-margin: calc(0.5 * (var(--height) - var(--close-icon-height) - var(--padding))); */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: var(--gap);
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    min-height: var(--height);
+    min-width: var(--height);
+    padding: var(--padding) calc(var(--padding) + var(--gap));
+    font-size: var(--font-size);
+    outline: var(--border-size) solid var(--border-color);
+    /* inner border */
+    outline-offset: calc(-1 * var(--border-size));
+    border-radius: var(--border-radius);
+}
+
+.with-before {
+    padding-left: var(--padding);
+}
+
+.with-after {
+    padding-right: var(--padding);
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.content {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+    line-height: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.before-element,
+.after-element {
+    min-width: calc(var(--height) - 2 * var(--padding));
+    height: calc(var(--height) - 2 * var(--padding));
+    border-radius: calc(var(--border-radius) - var(--padding));
+    background-color: var(--before-after-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-icon {
+    height: var(--close-icon-height);
+    width: var(--close-icon-height);
+    border-radius: var(--height);
+    margin-right: var(--close-icon-margin);
+    color: currentColor;
+    background-color: var(--close-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.close-icon:hover,
+.close-icon:active,
+.close-icon:focus {
+    border: none;
+    outline: none;
+    opacity: 0.5;
+}
+
+/* Size */
+.s-x-small {
+    --font-size: 0.75rem;
+    --gap: 2px;
+    --height: 1rem;
+    --padding: 1px;
+    --close-icon-margin: 0rem;
+}
+
+.s-small {
+    --font-size: 0.75rem;
+    --gap: 0.125rem;
+    --height: 1.25rem;
+    --padding: 0.125rem;
+    --close-icon-margin: 0rem;
+}
+
+.s-medium {
+    --height: 1.5rem;
+    --padding: 0.125rem;
+    --close-icon-margin: 0.1875rem;
+}
+
+.s-large {
+    --height: 1.75rem;
+    --padding: 0.25rem;
+    --close-icon-margin: 0.25rem;
+}
+
+/* Border size */
+.b-none {
+    --border-size: 0px;
+}
+
+.b-thin {
+    --border-size: 1px;
+}
+
+.b-medium {
+    --border-size: 2px;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.25rem;
+}
+
+.r-medium {
+    --border-radius: 0.5rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+/* sample customization */
+
+/* variant="red" */
+.variant-red {
+    --fg-color: #FFFFFF;
+    --bg-color: #FF0E48;
+}
+
+/* variant="blue" */
+.variant-blue {
+    --fg-color: #FFFFFF;
+    --bg-color: #567FEF;
+    --close-bg-color: transparent;
+}
+
+/* variant="blue-translucent" */
+.variant-blue-translucent {
+    --fg-color: #567FEF;
+    --bg-color: rgba(86, 127, 239, 0.2);
+    --close-bg-color: rgba(86, 127, 239, 0.2);
+    --border-color: rgba(86, 127, 239, 0.5);
+}

@@ -1,0 +1,62 @@
+@use "sass:math";
+// @each $color in $theme-colors {
+//     .bg-#{"" + $color} {
+//       background-color: var(--#{$color}) !important;
+//     }
+//   }
+
+// @for $i from 0 through 10 {
+//     .opacity-#{$i} {
+//         opacity: math.div($i,10) !important;
+//     }
+// }
+.bg-gradient-primary {
+    background-color: var(--primary);
+    background: linear-gradient(to bottom right, var(--primary), var(--primary-darker));
+}
+
+.bg-gradient-pink-light {
+    @apply bg-pink-200 from-pink-50 bg-gradient-to-br;
+}
+
+.bg-gradient-blue-light {
+    @apply bg-blue-200 from-blue-50 bg-gradient-to-br;
+}
+
+.bg-gradient-green-light {
+    @apply bg-teal-200 from-teal-50 bg-gradient-to-br;
+}
+
+.bg-gradient-gray-light {
+    @apply bg-gray-200 from-gray-50 bg-gradient-to-br;
+}
+
+.bg-gradient-bg {
+    @apply bg-gray-200 from-gray-50 bg-gradient-to-br;
+}
+
+.bg-gradient-yellow-light {
+    background-color: antiquewhite;
+    // @apply bg-yellow-200 from-orange-50 bg-gradient-to-br;
+    @apply from-blue-50 bg-gradient-to-br;
+}
+
+.bg-gradient-aqua-pink {
+    background: linear-gradient(to bottom right, #a3d7e5, #ffbabf);
+}
+
+.bg-gradient-aqua {
+    background: linear-gradient(to bottom right, #fffbd0, #a0d6e7);
+}
+
+.bg-gradient-pink {
+    background: linear-gradient(to bottom right, #ffbabf, #dcd1f1);
+}
+
+.bg-gradient-aqua-primary-light {
+    background: linear-gradient(to bottom right, #a0d6e7, #d7e7fb);
+}
+
+.bg-gradient-primary-light {
+    background: linear-gradient(to bottom right, #d7e7fb, rgba(var(--primary-rgb), 0.2));
+}

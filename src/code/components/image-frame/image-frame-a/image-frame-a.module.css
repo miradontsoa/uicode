@@ -1,0 +1,138 @@
+/* Main wrapper */
+.wrapper {
+    --border-color: #fff;
+    --border-width: 8px;
+    --shadow-offset: 4px;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 1rem;
+    --img-border-radius: 1rem;
+    color: var(--fg-color);
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: var(--border-radius);
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    background-image:
+        linear-gradient(to top right, rgba(62, 33, 141, 0.522), rgba(86, 37, 221, 0.404), #e1baf1),
+        radial-gradient(#3e218d, #5725dd, #c370e5);
+    border: var(--border-width) solid var(--border-color);
+    position: relative;
+}
+
+/* aspect ration */
+.ar-square {
+    aspect-ratio: 1;
+}
+
+.ar-landscape {
+    aspect-ratio: 9/16;
+}
+
+.ar-portrait {
+    aspect-ratio: 16/9;
+}
+
+.image-wrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    border-radius: var(--img-border-radius);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+
+}
+/* Image aspect */
+.img-ar-square {
+    width: 100%;
+    height: 100%;
+}
+
+.img-ar-portrait {
+    width: auto;
+    height: 100%;
+}
+
+.img-ar-landscape {
+    width: 100%;
+    height: auto;
+}
+/* Legend */
+.legend {
+    position: absolute;
+    padding: 0.25em 1em;
+    border-radius: 0.5rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+}
+
+/* Image Border radius */
+.img-r-none {
+    --img-border-radius: 0;
+}
+
+.img-r-small {
+    --img-border-radius: 0.25rem;
+}
+
+.img-r-medium {
+    --img-border-radius: 0.5rem;
+}
+
+.img-r-large {
+    --img-border-radius: 1rem;
+}
+
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 1rem;
+}
+
+.r-medium {
+    --border-radius: 2rem;
+}
+
+.r-large {
+    --border-radius: 2.5rem;
+}
+
+.r-full {
+    --border-radius: 5rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    box-shadow: 0px 0px 2px var(--shadow-color),
+        0px var(--shadow-offset) 4px -1px var(--shadow-color);
+}
+
+/* sample customization */
+/* variant="red" */
+.variant-red {
+    border: none;
+    background-image: linear-gradient(to top right, #8d2164, #f83333);
+}

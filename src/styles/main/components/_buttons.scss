@@ -1,0 +1,21 @@
+.btns-group-a {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    --bg-color: var(--primary) !important;
+    --shadow-color: var(--primary) !important;
+}
+
+.btn-primary-light {
+    --bg-color: transparent !important;
+    --fg-color: var(--primary) !important;
+    --shadow-color: var(--primary) !important;
+}
+
+.btn-outline-primary {
+    --bg-color: transparent !important;
+    --fg-color: var(--primary) !important;
+}

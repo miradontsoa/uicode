@@ -1,0 +1,9 @@
+.content > pre {
+    font-size: 0.875rem;
+}
+.content > pre > div {
+    border-radius: 8px;
+    max-height: 25rem;
+    overflow: auto;
+    background-color: rgba(var(--primary-rgb), 0.1) !important;
+}

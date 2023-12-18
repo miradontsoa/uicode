@@ -1,0 +1,107 @@
+/* Main wrapper */
+.wrapper {
+    --fg-color: #303030;
+    --bg-color: #ffffff;
+    --size: 4rem;
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+    --shadow-color: rgba(0, 0, 0, 0.17);
+    --border-radius: 0.5rem;
+    font-size: 1.5rem;
+    min-width: var(--size);
+    min-height: var(--size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) var(--shadow-spread) var(--shadow-color);
+    transition: 0.2s;
+    position: relative;
+}
+
+
+/* Size */
+
+.s-x-small {
+    --size: 1.25rem;
+}
+.s-small {
+    --size: 3rem;
+}
+
+.s-medium {
+    --size: 4rem;
+}
+
+.s-large {
+    --size: 5rem;
+}
+
+/* Border radius */
+.r-none {
+    --border-radius: 0;
+}
+
+.r-small {
+    --border-radius: 0.5rem;
+}
+
+.r-medium {
+    --border-radius: 1rem;
+}
+
+.r-large {
+    --border-radius: 1.5rem;
+}
+
+.r-full {
+    --border-radius: 10rem;
+}
+
+/* shadow */
+.sh-none {
+    box-shadow: none;
+}
+
+.sh-medium {
+    --shadow-x: 0px;
+    --shadow-y: 3px;
+    --shadow-blur: 6px;
+    --shadow-spread: 0px;
+}
+
+.ha-shadow {
+    transition: 0.2s;
+}
+
+.ha-shadow:hover,
+.ha-shadow:focus,
+.ha-shadow:active {
+    --shadow-x: 0px;
+    --shadow-y: 0px;
+    --shadow-blur: 3px;
+}
+
+/* sample customization */
+
+/* variant="blue" */
+.variant-blue {
+    --fg-color: #EBF0FF;
+    --bg-color: #567FEF;
+}
+
+/* variant="blue-light" */
+.variant-blue-light {
+    --fg-color: #567FEF;
+    --bg-color: #EBF0FF;
+}
+
+/* variant="blue-material" */
+.variant-blue-material {
+    --fg-color: #303030;
+    --bg-color: #EBF0FF;
+}
