@@ -8,6 +8,7 @@ import IconReact from "@/app-components/ui/icons/IconReact";
 import IconFigma from "@/app-components/ui/icons/IconFigma";
 import IconTypeScript from "@/app-components/ui/icons/IconTypeScript";
 import IconCSS from "@/app-components/ui/icons/IconCSS";
+import AccountAuthor from "@/app-components/ui/account/AccountAuthor";
 export default function HomeLandingHero() {
   return (
     <SectionA
@@ -20,16 +21,15 @@ export default function HomeLandingHero() {
       <div className="grid lg:grid-cols-2 gap-x-8">
         <div className="col mb-8 lg:mb-0">
           <div className="lg:w-9/12">
-            <h2 className={"text-primary title-1"}>React UI Components</h2>
-            {/* <p>
-              This toolkit provides out-of-the-box copy and paste ready-to-use React web UI components built with
-              TypeScript and CSS. Figma design file is also available.
-            </p> */}
+            <h2 className={"text-primary title-1"}>React UI code snippets</h2>
             <p>
-              Hey there! I have curated a collection of typical React UI
-              components built with TypeScript and CSS modules. A Figma design
-              file is also available.
+              Hey there! I have curated here a collection of typical React UI
+              components built with TypeScript and CSS. The Figma file is also
+              available.
             </p>
+            <div className="mt-4">
+              <AccountAuthor title="Mirado Andria" imageSrc="/img/me.jpg" />
+            </div>
             <div className={classNames(styles["icon-group"], "mt-4")}>
               <div className={styles["icon"]}>
                 <IconReact className={styles["icon-element"]} />
