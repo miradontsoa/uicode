@@ -5,10 +5,9 @@ import classNames from "classnames";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useContext, useState } from "react";
-import Logo from "../image/Logo";
 import IconMenuA from "../icons/IconMenuA";
+import Logo from "../image/Logo";
 import styles from "./NavbarTop.module.css";
-import ButtonApp from "../buttons/ButtonApp";
 
 type Props = {
   menuItems: MenuItem[];
