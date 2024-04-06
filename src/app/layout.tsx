@@ -21,6 +21,7 @@ import { Metadata, Viewport } from "next";
 import { Inter_Tight } from "next/font/google";
 
 const inter = Inter_Tight({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   themeColor: APP_INFO.THEME_COLOR,
